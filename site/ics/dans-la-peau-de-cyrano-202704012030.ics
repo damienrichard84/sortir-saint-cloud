@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dans-la-peau-de-cyrano-202704012030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270401T183000Z
+DTEND:20270401T194500Z
+SUMMARY:Dans la peau de Cyrano
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Seul en scène sur Colin\, un collégien qui se sent différe
+ nt. 1 h 15\, à partir de 10 ans. Salle Lino Ventura.\nCatégorie C.\nTa
+ rif : De 11 à 26 €\nhttps://www.3pierrots.fr/spectacles/dans-la-peau-
+ de-cyrano
+URL:https://www.3pierrots.fr/spectacles/dans-la-peau-de-cyrano
+END:VEVENT
+END:VCALENDAR

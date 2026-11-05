@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ailleurs-apres-202703042030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270304T193000Z
+DTEND:20270304T205000Z
+SUMMARY:Ailleurs/Après
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Une jeune femme entraîne son voisin veuf vers l’Ouest dans
+  sa vieille décapotable. 1 h 20. Salle Lino Ventura.\nCatégorie C.\nTa
+ rif : De 11 à 26 €\nhttps://www.3pierrots.fr/spectacles/ailleursapres
+URL:https://www.3pierrots.fr/spectacles/ailleursapres
+END:VEVENT
+END:VCALENDAR

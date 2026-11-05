@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:la-folle-journee-ou-le-mariage-de-figaro-202703092030@sortir-saint-cl
+ oud
+DTSTAMP:20261104T150000Z
+DTSTART:20270309T193000Z
+DTEND:20270309T211500Z
+SUMMARY:La Folle Journée ou Le Mariage de Figaro
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Beaumarchais\, mis en scène par Léna Bréban. 1 h 45. Salle
+  Lino Ventura.\nCatégorie A+.\nTarif : 45 €\nhttps://www.3pierrots.fr
+ /spectacles/la-folle-journee-ou-le-mariage-de-figaro
+URL:https://www.3pierrots.fr/spectacles/la-folle-journee-ou-le-mariage-de
+ -figaro
+END:VEVENT
+END:VCALENDAR

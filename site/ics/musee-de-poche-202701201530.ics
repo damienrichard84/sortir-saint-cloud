@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:musee-de-poche-202701201530@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270120T143000Z
+DTEND:20270120T163000Z
+SUMMARY:Musée de poche
+LOCATION:Musée des Avelines\, 60\, rue Gounod\, 92210 Saint-Cloud
+DESCRIPTION:Atelier 8-12 ans : crée ton exposition miniature et pop-up.\
+ nRéservation au 01 46 02 67 18.\nTarif : 6\,50 €\nhttps://www.musee-s
+ aintcloud.fr/agenda/musee-de-poche
+URL:https://www.musee-saintcloud.fr/agenda/musee-de-poche
+END:VEVENT
+END:VCALENDAR

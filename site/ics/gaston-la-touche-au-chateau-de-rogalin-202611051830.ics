@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:gaston-la-touche-au-chateau-de-rogalin-202611051830@sortir-saint-clou
+ d
+DTSTAMP:20261104T150000Z
+DTSTART:20261105T173000Z
+DTEND:20261105T183000Z
+SUMMARY:Gaston La Touche au château de Rogalin
+LOCATION:Musée des Avelines\, 60\, rue Gounod\, 92210 Saint-Cloud
+DESCRIPTION:Ses œuvres ont été acquises par le comte polonais Raczyńs
+ ki pour son château de Rogalin. Par Leszek Kanczugowski et Damien Chant
+ renne.\nRéservation au 01 46 02 67 18.\nTarif : Gratuit\nhttps://www.mu
+ see-saintcloud.fr/agenda/gaston-latouche-au-chateau-de-rogalin
+URL:https://www.musee-saintcloud.fr/agenda/gaston-latouche-au-chateau-de-
+ rogalin
+END:VEVENT
+END:VCALENDAR

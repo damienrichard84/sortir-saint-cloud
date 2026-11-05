@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:flora-fishbach-202701222030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270122T193000Z
+DTEND:20270122T205000Z
+SUMMARY:Flora Fishbach
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Concert festif et lumineux. 1 h 20. Salle Lino Ventura.\nCat
+ égorie A.\nTarif : De 18 à 37 €\nhttps://www.3pierrots.fr/spectacles
+ /flora-fishbach
+URL:https://www.3pierrots.fr/spectacles/flora-fishbach
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cosmix-2-0-202701311600@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270131T150000Z
+DTEND:20270131T155000Z
+SUMMARY:Cosmix 2.0
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Jonglage et nouveau cirque\, avec lumières LED et laser. 50 
+ min\, dès 5 ans. Salle Lino Ventura.\nCatégorie D.\nTarif : De 10 à 1
+ 9 €\nhttps://www.3pierrots.fr/spectacles/cosmix-20
+URL:https://www.3pierrots.fr/spectacles/cosmix-20
+END:VEVENT
+END:VCALENDAR

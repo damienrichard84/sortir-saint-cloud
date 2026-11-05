@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cleopatre-la-reine-louve-202702042030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270204T193000Z
+DTEND:20270204T212000Z
+SUMMARY:Cléopâtre – La Reine louve
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Une jeune Cléopâtre défend l’Égypte face à Rome. 1 h 5
+ 0\, à partir de 14 ans. Salle Lino Ventura.\nCatégorie B.\nTarif : De 
+ 13 à 30 €\nhttps://www.3pierrots.fr/spectacles/cleopatre-la-reine-lou
+ ve
+URL:https://www.3pierrots.fr/spectacles/cleopatre-la-reine-louve
+END:VEVENT
+END:VCALENDAR

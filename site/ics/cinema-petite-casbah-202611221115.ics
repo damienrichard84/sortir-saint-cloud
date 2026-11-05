@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-petite-casbah-202611221115@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261122T101500Z
+DTEND:20261122T113900Z
+SUMMARY:Cinéma : Petite Casbah
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Dès 6 ans\, d’Antoine Colomb\, 1 h 24. Algérie\, juin 195
+ 5 : Khadidja rejoint son grand frère à Alger.\n8 €. Moins de 15 ans 
+ : 5 €. Séances du dimanche matin et du lundi après-midi : 5 €. Ré
+ servation sur cinema3pierrots.fr.\nTarif : 8 €
+END:VEVENT
+END:VCALENDAR

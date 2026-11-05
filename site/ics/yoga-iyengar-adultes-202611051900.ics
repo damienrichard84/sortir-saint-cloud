@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:yoga-iyengar-adultes-202611051900@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261105T180000Z
+DTEND:20261105T193000Z
+SUMMARY:Yoga Iyengar adultes
+LOCATION:Écoles des Coteaux\, de Montretout ou gymnase Saint-Exupéry\, 
+ 92210 Saint-Cloud
+DESCRIPTION:Le Cours de la Scène\, jeudi soir et samedi matin. Cours d
+ ’essai possible.\nRenseignements au 07 72 22 84 99 ou 06 09 16 16 06.\
+ nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

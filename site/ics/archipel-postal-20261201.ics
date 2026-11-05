@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:archipel-postal-20261201@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261219
+SUMMARY:Archipel postal
+LOCATION:Le Carré\, So Art Café\, 3 bis\, rue d’Orléans\, 92210 Sain
+ t-Cloud
+DESCRIPTION:Exposition des ateliers d’arts plastiques adultes et jeunes
+  de l’ECLA. Vernissage le jeudi 3 décembre à partir de 19 h.\nRensei
+ gnements au 01 46 02 34 12.\nTarif : Entrée libre
+END:VEVENT
+END:VCALENDAR

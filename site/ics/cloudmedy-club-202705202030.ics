@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cloudmedy-club-202705202030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270520T183000Z
+DTEND:20270520T200000Z
+SUMMARY:Cloudmedy Club !
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Soirée stand-up avec l’association Au P’tit Comedy Club 
+ de Saint-Cloud : sketchs exclusifs\, talents confirmés et jeunes humori
+ stes.\nCarte Passion de 10 à 13 €.\nTarif : De 10 à 19 €
+END:VEVENT
+END:VCALENDAR

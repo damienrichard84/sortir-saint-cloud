@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:commemoration-de-l-armistice-de-1918-202611111000@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261111T090000Z
+DTEND:20261111T110000Z
+SUMMARY:Commémoration de l’Armistice de 1918
+LOCATION:Hôtel de ville\, départ en car\, 13\, place Charles-de-Gaulle\
+ , 92210 Saint-Cloud
+DESCRIPTION:Départ en car à 10 h\, cimetière à 10 h 30\, monument aux
+  Morts à 11 h 15.\nTarif : Cérémonie publique
+END:VEVENT
+END:VCALENDAR

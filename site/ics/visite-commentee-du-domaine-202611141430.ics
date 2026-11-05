@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:visite-commentee-du-domaine-202611141430@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261114T133000Z
+DTEND:20261114T150000Z
+SUMMARY:Visite commentée du Domaine
+LOCATION:Domaine national de Saint-Cloud\, 1\, avenue de la Grille-d’Ho
+ nneur
+DESCRIPTION:L’histoire du lieu et des grands personnages qui ont créé
+ \, agrandi et embelli le Domaine.\nRéservation obligatoire au 01 41 12 
+ 02 95 ou sur domaine-saint-cloud.fr.\nTarif : De 7\,50 à 9 €
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:atelier-ombres-et-lumieres-202611251600@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261125T150000Z
+DTEND:20261125T170000Z
+SUMMARY:Atelier Ombres et lumières
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Atelier parents-enfants dès 6 ans autour de La Boule enchant
+ ée.\nRéservé aux spectateurs ayant un billet pour le spectacle.\nTari
+ f : 5 €
+END:VEVENT
+END:VCALENDAR

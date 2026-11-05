@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:atelier-dessin-et-aquarelle-avf-202612021000@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261202T090000Z
+DTEND:20261202T110000Z
+SUMMARY:Atelier dessin et aquarelle AVF
+LOCATION:Accueil AVF\, hôtel de ville\, 13\, place Charles-de-Gaulle\, 9
+ 2210 Saint-Cloud
+DESCRIPTION:Une séance par mois.\nAdhésion AVF obligatoire. Renseigneme
+ nts au 01 47 71 53 68.\nTarif : 15 € le trimestre
+END:VEVENT
+END:VCALENDAR

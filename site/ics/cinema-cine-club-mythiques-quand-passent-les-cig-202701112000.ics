@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-cine-club-mythiques-quand-passent-les-cig-202701112000@sortir-
+ saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270111T190000Z
+DTEND:20270111T203700Z
+SUMMARY:Cinéma : Ciné-club Mythiques : Quand passent les cigognes
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:De Mikhail Kalatozov\, 1 h 37\, 1958. Débat animé par René
+  Marx.\n8 € (moins de 15 ans : 5 €). Tarif cinéma à la séance.\nT
+ arif : 8 €
+END:VEVENT
+END:VCALENDAR

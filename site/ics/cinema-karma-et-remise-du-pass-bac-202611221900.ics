@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-karma-et-remise-du-pass-bac-202611221900@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261122T180000Z
+DTEND:20261122T213000Z
+SUMMARY:Cinéma : Karma et remise du Pass bac
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Remise du pass cinéma aux bacheliers clodoaldiens mention Tr
+ ès Bien à 19 h\, en présence de Guillaume Canet\, puis projection de 
+ Karma à 20 h 30.\nRenseignements auprès du Pôle Culture de la Ville.\
+ nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

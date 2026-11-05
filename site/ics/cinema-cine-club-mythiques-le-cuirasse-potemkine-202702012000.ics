@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-cine-club-mythiques-le-cuirasse-potemkine-202702012000@sortir-
+ saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270201T190000Z
+DTEND:20270201T201500Z
+SUMMARY:Cinéma : Ciné-club Mythiques : Le Cuirassé Potemkine
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:De Sergueï Eisenstein et Grigori Aleksandrov\, 1 h 15\, 1926
+ . Débat animé par René Marx.\n8 € (moins de 15 ans : 5 €). Tarif 
+ cinéma à la séance.\nTarif : 8 €
+END:VEVENT
+END:VCALENDAR

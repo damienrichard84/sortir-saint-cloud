@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:reseau-des-parents-202611052030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261105T193000Z
+DTEND:20261105T213000Z
+SUMMARY:Réseau des parents
+LOCATION:Le Carré\, 3 bis\, rue d’Orléans\, 92210 Saint-Cloud
+DESCRIPTION:Le 5 novembre : « Comment éduquer dans un monde qui change 
+ ? Savoir allier fermeté et bienveillance »\, avec Rozenn Le Roux-Mion.
+  Le 3 décembre : les réseaux sociaux\, comment accompagner mon ado ?\n
+ Inscription sur reseaudesparents.org.\nTarif : Gratuit\nhttps://www.sain
+ tcloud.fr/agenda/conference-le-reseau-des-parents
+URL:https://www.saintcloud.fr/agenda/conference-le-reseau-des-parents
+END:VEVENT
+END:VCALENDAR

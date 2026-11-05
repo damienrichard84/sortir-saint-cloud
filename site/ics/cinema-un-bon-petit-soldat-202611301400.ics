@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-un-bon-petit-soldat-202611301400@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261130T130000Z
+DTEND:20261130T144200Z
+SUMMARY:Cinéma : Un bon petit soldat
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:De Stéphane Brizé\, 1 h 42. Carla Moretti doit concilier bi
+ en-être des salariés et objectifs de l’entreprise.\n8 €. Moins de 
+ 15 ans : 5 €. Séances du dimanche matin et du lundi après-midi : 5 
+ €. Réservation sur cinema3pierrots.fr.\nTarif : 8 €
+END:VEVENT
+END:VCALENDAR

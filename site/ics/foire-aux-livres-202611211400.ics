@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:foire-aux-livres-202611211400@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261121T130000Z
+DTEND:20261121T173000Z
+SUMMARY:Foire aux livres
+LOCATION:Salles des Avelines\, 60\, rue Gounod\, 92210 Saint-Cloud
+DESCRIPTION:Vente de livres d’occasion par Les Rendez-vous de Saint-Clo
+ ud.\nRenseignements au 07 81 61 18 70.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

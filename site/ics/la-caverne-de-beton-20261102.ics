@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:la-caverne-de-beton-20261102@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261115
+SUMMARY:La Caverne de béton
+LOCATION:Le Carré\, 3 bis\, rue d’Orléans\, 92210 Saint-Cloud
+DESCRIPTION:L’artiste clodoaldienne Manon Runel explore les liens entre
+  cinéma\, texture et perception.\nTarif : Entrée libre
+END:VEVENT
+END:VCALENDAR

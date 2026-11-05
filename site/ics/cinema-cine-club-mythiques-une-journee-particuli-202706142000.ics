@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-cine-club-mythiques-une-journee-particuli-202706142000@sortir-
+ saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270614T180000Z
+DTEND:20270614T194500Z
+SUMMARY:Cinéma : Ciné-club Mythiques : Une journée particulière
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:D’Ettore Scola\, 1 h 45\, 1977. Débat animé par Thomas Fo
+ uet.\n8 € (moins de 15 ans : 5 €). Tarif cinéma à la séance.\nTar
+ if : 8 €
+END:VEVENT
+END:VCALENDAR

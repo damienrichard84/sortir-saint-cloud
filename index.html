@@ -1,0 +1,452 @@
+<title>Sortir à Saint-Cloud</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Gabarito:wght@500;700;800&display=swap">
+<style>
+/* Layout: one column of dated rows, like a programme read down the page; each row opens onto its details and agenda buttons. */
+:root{
+  --bg:#f3f6f8; --surface:#ffffff; --ink:#172a3a; --muted:#536577; --line:#d6dfe6;
+  --accent:#1d4fa8; --accent-soft:#e3ebf8; --free:#176b45; --free-soft:#dff3e8;
+  --paid:#7a4a07; --paid-soft:#fbeed3; --warn:#9a2f1f; --warn-soft:#fbe6e1;
+  --display:"Gabarito","Trebuchet MS",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#101a23; --surface:#18252f; --ink:#e8eff4; --muted:#a2b3c1; --line:#2e3f4c;
+  --accent:#8db4f5; --accent-soft:#1f3350; --free:#7ddcaa; --free-soft:#143526;
+  --paid:#f0c777; --paid-soft:#3b2c10; --warn:#f5a596; --warn-soft:#42201a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#101a23; --surface:#18252f; --ink:#e8eff4; --muted:#a2b3c1; --line:#2e3f4c;
+  --accent:#8db4f5; --accent-soft:#1f3350; --free:#7ddcaa; --free-soft:#143526;
+  --paid:#f0c777; --paid-soft:#3b2c10; --warn:#f5a596; --warn-soft:#42201a; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.45 var(--body)}
+.wrap{max-width:780px;margin:0 auto;padding-block:28px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;grid-template-columns:minmax(0,1fr);gap:22px}
+h1{font:800 clamp(2rem,6vw,2.9rem)/1.05 var(--display);margin:0;letter-spacing:-.01em;text-wrap:balance}
+.sub{margin:6px 0 0;color:var(--muted)}
+.filters{display:grid;gap:10px}
+.field{width:100%;min-height:44px;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:inherit}
+.row2{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{min-height:38px;padding:6px 13px;border:1px solid var(--line);border-radius:20px;background:var(--surface);color:var(--ink);font:inherit;font-size:.94rem;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface);font-weight:700}
+.check{display:inline-flex;gap:7px;align-items:center;cursor:pointer}
+.check input{flex:none}
+.check input{width:18px;height:18px;accent-color:var(--accent)}
+.checks{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.95rem}
+.count{margin:0;color:var(--muted);font-size:.94rem}
+h2{font:700 1.2rem/1.2 var(--display);margin:0 0 8px}
+.group{display:grid;gap:0}
+.list{border-top:2px solid var(--ink)}
+details.ev{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:4px 14px;padding:13px 4px;align-items:start}
+summary::-webkit-details-marker{display:none}
+summary:hover .name{color:var(--accent);text-decoration:underline}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.date{text-align:center;font-family:var(--display);line-height:1;font-variant-numeric:tabular-nums}
+.date .wd{display:block;font-size:.78rem;color:var(--muted);letter-spacing:.03em}
+.date .d{display:block;font-size:1.65rem;font-weight:800;margin:2px 0}
+.date .m{display:block;font-size:.78rem;color:var(--muted)}
+.date.span .d{font-size:.95rem;line-height:1.15;font-weight:700}
+.name{font:700 1.08rem/1.25 var(--display);margin:0}
+.meta{margin:3px 0 0;color:var(--muted);font-size:.95rem}
+.tags{display:flex;flex-direction:column;gap:5px;align-items:flex-end}
+.pill{display:inline-block;padding:3px 9px;border-radius:5px;font-size:.86rem;font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+.pill.f{background:var(--free-soft);color:var(--free)}
+.pill.p{background:var(--paid-soft);color:var(--paid)}
+.pill.u{border:1px dashed var(--line);color:var(--muted);font-weight:400}
+.pill.w{background:var(--warn-soft);color:var(--warn)}
+.body{padding:0 4px 18px 70px;display:grid;gap:10px}
+.body p{margin:0;max-width:62ch}
+.fact{color:var(--muted);font-size:.94rem}
+.fact b{color:var(--ink)}
+.note{background:var(--warn-soft);color:var(--warn);padding:7px 10px;border-radius:6px;font-size:.92rem}
+.agenda{display:grid;gap:7px}
+.agenda strong{font:700 .98rem var(--display)}
+.btns{display:flex;flex-wrap:wrap;gap:7px}
+.btn{display:inline-flex;align-items:center;min-height:40px;padding:7px 13px;border-radius:7px;background:var(--accent-soft);color:var(--accent);font-weight:700;font-size:.95rem;text-decoration:none}
+.btn:hover{text-decoration:underline}
+.hint{font-size:.86rem;color:var(--muted);margin:0}
+.src a,.foot a{color:var(--accent)}
+.src{font-size:.88rem;color:var(--muted)}
+.empty{padding:26px 4px;color:var(--muted)}
+.install{display:grid;gap:10px;padding:12px 14px;border-radius:8px;background:var(--accent-soft)}
+.install p{margin:0}
+.btn{border:0;font-family:inherit;cursor:pointer}
+.install .btn{background:var(--accent);color:var(--surface)}
+.install .btn.quiet{background:transparent;color:var(--accent)}
+.foot{border-top:1px solid var(--line);padding-top:14px;color:var(--muted);font-size:.9rem;display:grid;gap:8px}
+.foot p{margin:0;max-width:68ch}
+@media (max-width:560px){
+  summary{grid-template-columns:48px minmax(0,1fr);gap:4px 12px}
+  .tags{grid-column:2;flex-direction:row;flex-wrap:wrap;align-items:center}
+  .body{padding-left:4px}
+  .row2{grid-template-columns:minmax(0,1fr)}
+}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Sortir à Saint-Cloud</h1>
+    <p class="sub" id="sub"></p>
+  </header>
+  <section class="install" id="install" aria-label="Installer l’application" hidden>
+    <p id="installText"></p>
+    <div class="btns"><button type="button" class="btn" id="installBtn" hidden>Installer l’application</button><button type="button" class="btn quiet" id="installHide">Masquer</button></div>
+  </section>
+  <section class="filters" aria-label="Filtres">
+    <div class="row2">
+      <input class="field" id="q" type="search" placeholder="Chercher un événement, un lieu…" aria-label="Chercher un événement ou un lieu">
+      <select class="field" id="cat" aria-label="Catégorie"></select>
+    </div>
+    <div class="chips" id="periods"></div>
+    <div class="checks">
+      <label class="check"><input type="checkbox" id="free"> Gratuit uniquement</label>
+      <label class="check"><input type="checkbox" id="members"> Afficher aussi les cours à l’année et les activités réservées aux adhérents</label>
+    </div>
+  </section>
+  <p class="count" id="count" aria-live="polite"></p>
+  <main class="group" id="out" style="gap:24px"></main>
+  <footer class="foot">
+    <p><b>Mis à jour le 5 novembre 2026.</b> Page indépendante, non éditée par la Ville de Saint-Cloud. Vérifiez auprès de l’organisateur avant de vous déplacer.</p>
+    <p>Sources : <a href="https://www.saintcloud.fr/agenda" target="_blank" rel="noopener">agenda de la Ville</a>, <a href="https://www.calameo.com/accounts/5288035" target="_blank" rel="noopener">publications de la Ville sur Calaméo</a>, <a href="https://www.musee-saintcloud.fr/agenda" target="_blank" rel="noopener">musée des Avelines</a>, <a href="https://www.3pierrots.fr/spectacles" target="_blank" rel="noopener">Les 3 Pierrots</a>, <a href="https://www.mediatheque-saintcloud.fr/agenda" target="_blank" rel="noopener">médiathèque</a>, <a href="https://www.ecla.net/" target="_blank" rel="noopener">ECLA</a>. Les annonces publiques du groupe Facebook Quoi de neuf Saint-Cloud ? ont aussi été relevées.</p>
+    <p>Séances ordinaires de cinéma listées jusqu’au 1er décembre, date de fin de la grille publiée. La suite sera sur <a href="https://cinema3pierrots.fr/" target="_blank" rel="noopener">cinema3pierrots.fr</a>. Les sorties hors de Saint-Cloud ne sont pas listées.</p>
+  </footer>
+</div>
+
+<script id="app">
+/*DATA-START*/
+const P3=["Les 3 Pierrots","6, rue du Mont-Valérien"],MA=["Musée des Avelines","60, rue Gounod"],MED=["Médiathèque","60, rue Gounod"],CA=["Le Carré","3 bis, rue d’Orléans"],DOM=["Domaine national de Saint-Cloud","1, avenue de la Grille-d’Honneur"],DOMM=["Musée historique du Domaine national","Domaine national de Saint-Cloud"],EC=["Espace d’animation des Coteaux","Place Santos-Dumont"],SA=["Salles des Avelines","60, rue Gounod"],AVF=["Accueil AVF, hôtel de ville","13, place Charles-de-Gaulle"],PJ=["Salle de la Porte jaune",""],EE=["Espace Emploi","4, rue du Mont-Valérien"],WEB=["En ligne",""],BAT=["Boîte aux trésors","18, rue des Écoles"],EA=["École allemande internationale de Paris","12, rue Lelégard"];
+const F=(l)=>["f",l||"Gratuit"],Pd=(l)=>["p",l],U=(l)=>["u",l||""];
+const CINE="8 € (moins de 15 ans : 5 €). Tarif cinéma à la séance.";
+const RM="Réservation au 01 46 02 67 18.",RD="Réservation au 01 41 12 02 95 ou sur domaine-saint-cloud.fr.",RCOT="Réservé aux adhérents (60 ans et plus). Renseignements au 01 46 89 64 86.",RAVF="Adhésion AVF obligatoire. Renseignements au 01 47 71 53 68.";
+const SC="Saint-CloudScope n°19",MAG="Saint-Cloud Mag n°440",PC="P’tit Cloud n°19",MU="Site du musée",TP="Site des 3 Pierrots",VI="Agenda de la Ville",PN="Programme 3 Pierrots de novembre",PS="Plaquette 3 Pierrots 2026-2027",PCC="Programme Ciné-club 2026-2027",POP="Programme Opéra Live",PJP="Programme jeune public 2026-2027",PCA="Programme du Carré",PME="Programme de la médiathèque",PMU="Programme Dans les coulisses du musée",PED="Plaquette Stages École des Sports",SME="Site de la médiathèque",SEC="Site de l’ECLA",FB="Groupe Facebook Quoi de neuf Saint-Cloud ?";
+const RPC="Moins de 15 ans : 5 €. Atelier sur inscription : c.mihura@saintcloud.fr.",RAT="Réservé aux spectateurs ayant un billet pour le spectacle associé. Renseignements sur 3pierrots.fr.";
+const RE="Tarif et inscription auprès de l’ECLA, au 01 46 02 34 12.";
+const ST="De 63 à 208 €",RS="Hors Saint-Cloud : 332 €. Inscription en ligne sur l’Espace Famille. Renseignements au 01 47 71 54 33.";
+const sl=(days,...times)=>days.flatMap(d=>times.length?times.map(t=>d+" "+t):[d]);
+const TA="De 18 à 37 €",TB="De 13 à 30 €",TC="De 11 à 26 €",TD="De 10 à 19 €",TAP="45 €",SA3="Salle Lino Ventura.";
+const FT="8 €. Moins de 15 ans : 5 €. Séances du dimanche matin et du lundi après-midi : 5 €. Réservation sur cinema3pierrots.fr.";
+function FILM(n,mins,sched,de){const end=t=>{if(!mins)return t;const[h,m]=t.split(":").map(Number),x=h*60+m+mins;return t+"-"+String(Math.floor(x/60)%24).padStart(2,"0")+":"+String(x%60).padStart(2,"0")};return{n,c:"Cinéma",fi:1,l:P3,o:Object.entries(sched).flatMap(([d,ts])=>ts.split(" ").map(t=>"2026-"+d+" "+end(t))),p:Pd("8 €"),de,re:FT,s:[PN,MAG]}}
+function weekly(from,to,days,time,skip){const out=[];let t=Date.parse(from+"T00:00Z");const e=Date.parse(to+"T00:00Z");for(;t<=e;t+=864e5){const d=new Date(t),s=d.toISOString().slice(0,10);if(days.includes(d.getUTCDay())&&!(skip||[]).some(x=>Array.isArray(x)?s>=x[0]&&s<=x[1]:s===x))out.push(s+(time?" "+time:""))}return out}
+const EVENTS=[
+// Spectacles
+{n:"Hommage à Nicole Sénéchaut",c:"Spectacles",l:CA,o:["2026-11-04 19:15"],p:F("Participation libre"),de:"Soirée de l’association GERMA : extraits de son enseignement et de ses prestations dansées, puis musiciens et danseurs de niveau international sur scène.",re:"Renseignements : associationgerma@yahoo.fr.",s:[SC,MAG],u:"https://www.saintcloud.fr/agenda/hommage-nicole-senechaut-0"},
+{n:"Peu importe",c:"Spectacles",l:P3,o:["2026-11-12 20:30-21:50"],p:Pd("De 11 à 26 €"),st:"Complet",de:"De Marius von Mayenburg, 1 h 20, Studio Bertrand Tavernier. Simone et Erik, un couple qui se débat avec les fissures du quotidien.",re:"Carte Passion de 10 à 18 €. Le magazine de novembre annonce la soirée complète.",s:[SC,MAG],u:"https://www.3pierrots.fr/spectacles/peu-importe"},
+{n:"Camille Chamoux – Ça va ça va",c:"Spectacles",l:P3,o:["2026-11-19 20:30-21:55"],p:Pd("45 €"),de:"Humour. Salle Lino Ventura, 1 h 25. Un spectacle sur la fragilité et les complexités du quotidien, avec une bonne dose d’autodérision.",re:"Réservation sur billetterie-3pierrots.mapado.com.",s:[TP,SC],u:"https://www.3pierrots.fr/spectacles/camille-chamoux-ca-va-ca-va"},
+{n:"Les Goguettes (en trio mais à quatre)",c:"Spectacles",l:P3,o:["2026-12-02 20:30"],p:Pd("De 18 à 37 €"),de:"Quatre chanteurs traversent la variété française, le rap et les tubes des années 1990, avec fougue et humour.",re:"Carte Passion de 10 à 29 €.",s:[SC,TP],u:"https://www.3pierrots.fr/spectacles/les-goguettes"},
+{n:"Made in France",c:"Spectacles",l:P3,o:["2026-12-10 20:30"],p:Pd("De 13 à 30 €"),de:"Théâtre contemporain. Le combat d’hommes et de femmes prêts à tout pour sauver l’industrie française… sauf à faire quelque chose. À partir de 13 ans.",re:"Carte Passion de 10 à 23 €.",s:[SC,TP],u:"https://www.3pierrots.fr/spectacles/made-france"},
+{n:"Cloudmedy Club !",c:"Spectacles",l:P3,o:["2026-12-17 20:30-22:00","2027-03-25 20:30-22:00","2027-05-20 20:30-22:00"],p:Pd("De 10 à 19 €"),de:"Soirée stand-up avec l’association Au P’tit Comedy Club de Saint-Cloud : sketchs exclusifs, talents confirmés et jeunes humoristes.",re:"Carte Passion de 10 à 13 €.",s:[SC]},
+// Cinéma
+{n:"Séance NÉON",c:"Cinéma",l:P3,o:["2026-11-07 18:30-20:51","2027-03-06 18:00","2027-05-29 18:00"],p:Pd("6,50 €"),de:"Séance organisée par des jeunes et ouverte à tous. Le 7 novembre : L’Échange de Clint Eastwood en VF, suivi d’une rencontre avec Françoise Cadol, voix française d’Angelina Jolie. Films des séances suivantes à venir.",re:"Réservation sur cinema3pierrots.fr.",note:"Le 7 novembre : 18 h selon le Scope et la plaquette, 18 h 30 selon le site et le programme de novembre.",s:[PN,PS],u:"https://www.3pierrots.fr/spectacles/lechange"},
+{n:"Ciné Relax",c:"Cinéma",l:P3,o:["2026-11-08 16:15-17:46","2026-12-12","2027-01-10","2027-03-21","2027-04-25","2027-06-06"],p:Pd("4 €"),de:"Séance inclusive, accessible aux personnes en situation de handicap, en version sous-titrée, suivie d’un goûter. Le 8 novembre : Le Corset, film d’animation de Louis Clichy. Films et horaires des séances suivantes à venir.",re:"Réservation sur cinema3pierrots.fr. Renseignements : saintcloud@cinerelax.org.",note:"En janvier : le 10 selon le magazine de novembre, le 24 selon la plaquette de saison.",s:[MAG,PS]},
+{n:"Avant-première : Un peu avant minuit",c:"Cinéma",l:P3,o:["2026-11-13 20:30-22:20"],p:Pd("8 €"),de:"De et en présence de Nicolas Pariser, 1 h 50. Léo, 49 ans, apprend la mort de son père biologique.",re:CINE,s:[MAG]},
+{n:"Regards documentaires : Le Temps des animaux",c:"Cinéma",l:P3,o:["2026-11-15 16:00-17:24"],p:Pd("8 €"),de:"De Vincent Chabloz, 1 h 24, en VO, dès 8 ans. La vallée de Derborence, dans les Alpes. Séance suivie d’une rencontre.",re:CINE,s:[SC,MAG],u:"https://www.3pierrots.fr/spectacles/le-temps-des-animaux"},
+{n:"Ciné-club Mythiques : Les Tontons flingueurs",c:"Cinéma",l:P3,o:["2026-11-16 20:00-21:45"],p:Pd("8 €"),de:"De Georges Lautner, 1 h 45, 1963. Suivi d’un débat animé par Thomas Fouet.",re:CINE,s:[SC,MAG],u:"https://www.3pierrots.fr/spectacles/les-tontons-flingueurs"},
+{n:"Thé-Ciné",c:"Cinéma",l:P3,o:["2026-11-16 14:00-16:56",...sl(["2026-12-14","2027-01-18","2027-02-22","2027-03-22","2027-04-19","2027-05-24"],"14:30")],p:Pd("5 €"),de:"Avec l’Espace d’animation des Coteaux : film récent sous-titré en français, suivi d’un moment convivial. Séance ouverte à tous. Le 16 novembre : Les Misérables.",re:"Tarif cinéma du lundi après-midi.",note:"Le 16 novembre : 14 h selon le programme de novembre, 14 h 30 selon le Scope et la plaquette.",s:[PN,PS]},
+{n:"Karma et remise du Pass bac",c:"Cinéma",l:P3,o:["2026-11-22 19:00-22:30"],p:U(),de:"Remise du pass cinéma aux bacheliers clodoaldiens mention Très Bien à 19 h, en présence de Guillaume Canet, puis projection de Karma à 20 h 30.",re:"Renseignements auprès du Pôle Culture de la Ville.",s:[MAG]},
+{n:"Ciné-club Mythiques : Les 400 coups",c:"Cinéma",l:P3,o:["2026-12-07 20:00-21:40"],p:Pd("8 €"),de:"De François Truffaut, 1 h 40, 1959. Suivi d’un débat animé par Jean-Charles Fitoussi.",re:CINE,s:[SC]},
+// Films à l'affiche : grille du magazine, semaines du 4 novembre au 1er décembre
+FILM("Quelques mots d’amour",97,{"11-04":"16:45","11-05":"20:30","11-06":"15:45 18:15","11-07":"13:15 20:45","11-08":"11:00 14:00 16:00","11-09":"14:15 20:30"},"De Rudi Rosenberg, 1 h 37. Sarcelles, 1995 : Erika élève seule ses deux enfants."),
+FILM("Moulin",134,{"11-04":"14:00 20:00","11-05":"20:00","11-06":"15:30 20:00","11-07":"13:00 15:30","11-08":"13:30 18:15 21:00","11-09":"16:15","11-10":"20:00"},"De László Nemes, 2 h 14. Juin 1943 : Jean Moulin est arrêté alors qu’il tente de réunifier les forces de l’Armée secrète."),
+FILM("La Gradiva (VO)",145,{"11-04":"16:30","11-07":"15:15","11-08":"18:00","11-09":"14:00 20:00"},"De Marine Atlan, 2 h 25. Des lycéens français en voyage scolaire à Pompéi."),
+FILM("Karma",140,{"11-04":"20:15","11-06":"17:45 20:30","11-07":"18:00","11-08":"11:15 20:45","11-09":"16:45","11-10":"20:15","11-22":"20:30"},"De Guillaume Canet, 2 h 20. Interdit aux moins de 12 ans. Le 22 novembre à 20 h 30, en présence de Guillaume Canet."),
+FILM("Il faut brûler maman",81,{"11-11":"14:00 20:45","11-12":"20:45","11-13":"16:00 20:45","11-14":"14:00 20:45","11-15":"13:45 15:45 20:45","11-16":"17:30","11-17":"20:45","11-18":"16:00","11-20":"18:00 20:30","11-21":"16:00 19:00 20:45","11-22":"13:45 16:15 18:30 20:45","11-23":"14:00 20:45"},"D’Albert Dupontel, 1 h 21. Une famille de croque-morts se retrouve pour les funérailles de la mère."),
+FILM("15/18",104,{"11-11":"16:15 20:30","11-13":"16:15 18:00","11-14":"15:30 18:15 20:30","11-15":"13:30 18:15 20:30","11-16":"16:30","11-17":"20:30"},"De Cédric Kahn, 1 h 44. Lucia, 17 ans, dans une unité de soins pédopsychiatriques."),
+FILM("Everytime (VO)",119,{"11-11":"16:00","11-13":"18:15","11-14":"15:45 17:30","11-15":"11:00 18:00","11-16":"20:15"},"De Sandra Wollner, 1 h 59. Prix Un Certain Regard, Cannes 2026."),
+FILM("Le merveilleux hiver de Tom le chat (VF)",62,{"11-11":"14:15","11-14":"14:15","11-15":"11:15"},"Dès 3 ans, 1 h 02. Tom et Chat-Souris découvrent la neige."),
+FILM("Les Braves (Coward)",127,{"11-18":"20:30","11-19":"14:00 20:45","11-20":"15:30 20:15","11-21":"16:30 20:30","11-22":"13:30 16:00","11-23":"16:00 20:30","11-24":"20:30"},"De Lukas Dhont, 2 h 07. Un jeune soldat sur le front de la Première Guerre mondiale."),
+FILM("L’Âge d’Or",113,{"11-20":"16:00 18:15","11-21":"14:00 18:00","11-22":"11:00 18:00","11-23":"14:15 16:30"},"De Bérenger Thouin, 1 h 53. Jeanne Lavaur traverse le XXe siècle et défie son destin."),
+FILM("Petite Casbah",84,{"11-18":"14:00","11-21":"14:15","11-22":"11:15"},"Dès 6 ans, d’Antoine Colomb, 1 h 24. Algérie, juin 1955 : Khadidja rejoint son grand frère à Alger."),
+FILM("Un bon petit soldat",102,{"11-25":"20:30","11-26":"20:45","11-27":"20:45","11-28":"14:00 16:00 20:45","11-29":"14:00 16:00 20:30","11-30":"14:00 20:45","12-01":"20:30"},"De Stéphane Brizé, 1 h 42. Carla Moretti doit concilier bien-être des salariés et objectifs de l’entreprise."),
+FILM("Demain je tombe amoureux",107,{"11-25":"15:30","11-26":"20:30","11-27":"15:45 20:30","11-28":"15:30 20:30","11-29":"13:45 16:15 20:45","11-30":"14:15 16:30 20:30"},"De Martin Provost, 1 h 47. Émile, professeur de lettres, donne son dernier cours avant la retraite."),
+FILM("L’Affaire Marie-Claire",102,{"11-27":"18:00","11-28":"17:45","11-29":"11:00 18:30"},"De Lauriane Escaffre et Yvo Muller, 1 h 42. Novembre 1972, le procès de Bobigny."),
+FILM("Wild Horse Nine (VO)",118,{"11-27":"18:15","11-28":"18:00","11-29":"18:00","11-30":"16:00"},"De Martin McDonagh, 1 h 58. Deux agents de la CIA envoyés vers l’île de Pâques en 1973."),
+FILM("À la poursuite de l’Affreunard",44,{"11-25":"14:00","11-28":"14:15","11-29":"11:15"},"Dès 3 ans, 44 min. L’hiver arrive et avec lui la première hibernation."),
+// Musique
+{n:"Requiem de Maurice Duruflé",c:"Musique",l:["Église Saint-Clodoald","Saint-Cloud"],o:["2026-11-08 17:00"],p:F(),de:"Les Concerts de Saint-Cloud.",s:[MAG,VI],u:"https://www.saintcloud.fr/agenda/requiem-de-maurice-durufle"},
+{n:"Open Zik, la scène ouverte de l’ECLA",c:"Musique",l:CA,o:["2026-11-20 20:00"],p:F("Participation libre"),de:"Salle E. Bond. Trois groupes : Kernel Panic (rock funk), La Siana (pop électro) et Sequel (indie pop). Bar sur place.",re:"Réservation via HelloAsso, depuis ecla.net.",s:[SEC,SC],u:"https://www.ecla.net/concert-open-zik-vendredi-20-novembre-2026/"},
+{n:"Derrière le rideau",c:"Musique",l:MA,o:["2026-11-29 16:00-17:00"],p:F(),de:"Parcours musical dans les salles d’exposition, par la classe d’Isabelle Philippe et de Lionel Muzin du conservatoire.",re:RM,s:[SC,MAG]},
+{n:"Concert de l’Avent",c:"Musique",l:EA,o:["2026-12-15 19:00"],p:U(),de:"Par l’école de musique franco-allemande.",s:[SC]},
+{n:"Jam session",c:"Musique",l:CA,o:["2026-12-17 20:00"],p:F("Entrée libre"),de:"Musiciens amateurs ou confirmés, apportez vos instruments. Soirée ouverte à tous, bar sur place.",re:"Renseignements sur ecla.net.",s:[SC]},
+// Expositions et visites
+{n:"Dans les coulisses du musée",c:"Expositions et visites",l:MA,r:["2026-10-15","2027-02-21"],p:F("Entrée libre"),de:"Les métiers et les mystères d’un musée : restauration, récolement, entrée des œuvres dans la collection.",re:"Ouvert du mercredi au samedi de 12 h à 18 h, le dimanche de 14 h à 18 h. Fermé les jours fériés et de Noël au 1er janvier.",s:[MU,SC],u:"https://www.musee-saintcloud.fr/agenda/dans-les-coulisses-du-musee"},
+{n:"Visite commentée de l’exposition",c:"Expositions et visites",l:MA,o:weekly("2026-11-07","2027-02-21",[6,0],"14:30-15:30",["2026-11-15","2027-01-31",["2026-12-25","2027-01-01"]]),p:Pd("5,50 €"),de:"Une heure dans « Dans les coulisses du musée », chaque samedi et dimanche, sauf le 15 novembre et le 31 janvier.",re:RM,note:"Le magazine indique 5,30 € ; le musée et le Scope indiquent 5,50 €.",s:[PMU,MU],u:"https://www.musee-saintcloud.fr/agenda/visites-commentees-de-lexposition-25"},
+{n:"L’exposition s’improvise !",c:"Expositions et visites",l:MA,o:["2026-11-15 14:30-15:30","2026-11-15 16:00-17:00"],p:F(),de:"Visite décalée par des comédiens improvisateurs. Deux séances d’une heure.",re:RM,s:[PMU,MU],u:"https://www.musee-saintcloud.fr/agenda/lexposition-simprovise"},
+{n:"La Caverne de béton",c:"Expositions et visites",l:CA,r:["2026-11-02","2026-11-14"],p:F("Entrée libre"),de:"L’artiste clodoaldienne Manon Runel explore les liens entre cinéma, texture et perception.",s:[SC,MAG]},
+{n:"Argent et couleurs",c:"Expositions et visites",l:CA,r:["2026-11-18","2026-12-03"],p:F("Entrée libre"),de:"Les artistes japonaises Kimiko Okubo et Miho Shibui font se rencontrer le métal et la peinture. Vernissage le vendredi 20 novembre à 18 h.",s:[SC,MAG]},
+{n:"Archipel postal",c:"Expositions et visites",l:["Le Carré, So Art Café","3 bis, rue d’Orléans"],r:["2026-12-01","2026-12-18"],p:F("Entrée libre"),de:"Exposition des ateliers d’arts plastiques adultes et jeunes de l’ECLA. Vernissage le jeudi 3 décembre à partir de 19 h.",re:"Renseignements au 01 46 02 34 12.",s:[SC]},
+{n:"Icônes",c:"Expositions et visites",l:CA,r:["2026-12-09","2026-12-18"],p:F("Entrée libre"),de:"L’icône, élément central de la spiritualité des chrétiens d’Orient.",s:[SC]},
+{n:"Visite commentée du Domaine",c:"Expositions et visites",l:DOM,o:["2026-11-14 14:30-16:00"],p:Pd("De 7,50 à 9 €"),de:"L’histoire du lieu et des grands personnages qui ont créé, agrandi et embelli le Domaine.",re:"Réservation obligatoire au 01 41 12 02 95 ou sur domaine-saint-cloud.fr.",s:[SC,MAG]},
+{n:"Visite commentée du musée historique",c:"Expositions et visites",l:DOMM,o:["2026-11-25 14:30-16:00"],p:Pd("De 7,50 à 9 €"),de:"Une heure trente dans le musée historique du Domaine.",re:RD,s:[SC,MAG]},
+{n:"Micro-visite : incendie du château",c:"Expositions et visites",l:DOMM,o:["2026-12-13 14:30-14:50"],p:F(),de:"Vingt minutes autour d’une lithographie de l’incendie du château, d’après Léon Sabatier.",s:[SC]},
+// Conférences
+{n:"Gaston La Touche au château de Rogalin",c:"Conférences",l:MA,o:["2026-11-05 18:30-19:30"],p:F(),de:"Ses œuvres ont été acquises par le comte polonais Raczyński pour son château de Rogalin. Par Leszek Kanczugowski et Damien Chantrenne.",re:RM,note:"18 h 30 selon le musée et le magazine, 19 h 30 selon le site de la Ville, 16 h selon le Scope. L’horaire retenu est celui du musée.",s:[PMU,MU],u:"https://www.musee-saintcloud.fr/agenda/gaston-latouche-au-chateau-de-rogalin"},
+{n:"Les lieux de Napoléon, par Charles-Éloi Vial",c:"Conférences",l:["Médiathèque, Espace musique","60, rue Gounod"],o:["2026-11-07 18:00-19:00"],p:F("Entrée libre dans la limite des places disponibles"),de:"Par le docteur en histoire et conservateur des bibliothèques. Public adulte. Vente-dédicace à l’issue de la conférence.",s:[SC,MAG],u:"https://www.saintcloud.fr/agenda/les-lieux-de-napoleon-par-charles-eloi-vial"},
+{n:"Le couple franco-allemand, moteur de l’Europe ?",c:"Conférences",l:CA,o:["2026-11-16 15:00"],p:U(),de:"Conférence d’Hélène Miard-Delacroix, proposée par le Cercle féminin d’amitié européenne.",re:"Renseignements : cfae.saintcloud@gmail.com.",s:[SC]},
+{n:"Bruxelles 1900, par Sandrine Faucher",c:"Conférences",l:CA,o:["2026-11-17 14:15"],p:Pd("4, 5 ou 10 €"),de:"Conférences Arts et Loisirs.",re:"4 € étudiant, 5 € adhérent, 10 € non-adhérent. Renseignements au 06 41 59 86 31.",s:[SC]},
+{n:"Café philo",c:"Conférences",l:["Café restaurant Le Beau Site","140, boulevard de la République"],o:["2026-11-21 16:00-18:00","2026-12-19 16:00-18:00"],p:Pd("15 € + une consommation"),de:"Le Cercle des artistes et des philosophes : partager sa réflexion autour d’un verre. Gratuit pour les étudiants, sans réservation.",re:"Renseignements : lecap2017@orange.fr.",s:[SC]},
+{n:"Zurbaran 1598-1664, par Paul Guillon",c:"Conférences",l:CA,o:["2026-12-01 14:15"],p:Pd("4, 5 ou 10 €"),de:"Conférences Arts et Loisirs.",re:"4 € étudiant, 5 € adhérent, 10 € non-adhérent. Renseignements au 06 41 59 86 31.",s:[SC]},
+{n:"Cézanne et nous, par Émilie Jean",c:"Conférences",l:CA,o:["2026-12-15 14:15"],p:Pd("4, 5 ou 10 €"),de:"Conférences Arts et Loisirs.",re:"4 € étudiant, 5 € adhérent, 10 € non-adhérent. Renseignements au 06 41 59 86 31.",s:[SC]},
+// Jeune public
+{n:"La Boule enchantée",c:"Jeune public",l:P3,o:["2026-11-25 15:00-15:45"],p:Pd("De 9 à 12 €"),de:"Théâtre d’ombres dès 4 ans : la marionnettiste dessine l’histoire dans le sable au rythme de la musique live.",re:"Carte Passion : 10 €.",s:[PC,MAG],u:"https://www.3pierrots.fr/spectacles/la-boule-enchantee"},
+{n:"Atelier Ombres et lumières",c:"Jeune public",l:P3,o:["2026-11-25 16:00-18:00"],p:Pd("5 €"),de:"Atelier parents-enfants dès 6 ans autour de La Boule enchantée.",re:"Réservé aux spectateurs ayant un billet pour le spectacle.",s:[PC,MAG]},
+{n:"Sur les pas de Léonard de Vinci",c:"Jeune public",l:P3,o:["2026-12-06 16:00-17:15"],p:Pd("De 13 à 30 €"),de:"Voyage fantastique et musical au temps de la Renaissance italienne, dès 5 ans.",re:"Carte Passion de 10 à 23 €.",s:[PC,SC],u:"https://www.3pierrots.fr/spectacles/sur-les-pas-de-leonard-de-vinci"},
+{n:"Mon Petit Ciné : Le grand Noël des animaux",c:"Jeune public",l:P3,o:["2026-12-09 15:00-16:12"],p:Pd("8 €"),de:"Dès 3 ans, 1 h 12. Le traîneau du père Noël doit être sauvé. Séance suivie d’un atelier créatif.",re:"Moins de 15 ans : 5 €. Atelier sur inscription : c.mihura@saintcloud.fr.",s:[PJP,PC]},
+{n:"Courts-métrages de Noël",c:"Jeune public",l:["Médiathèque, Espace jeunesse","60, rue Gounod"],o:["2026-12-05 10:30","2026-12-05 16:00"],p:F("Entrée libre dans la limite des places disponibles"),de:"À 10 h 30 pour les 3-5 ans, à 16 h pour les plus de 6 ans.",s:[PC]},
+{n:"Les bibliothécaires racontent",c:"Jeune public",l:["Médiathèque, Espace jeunesse","60, rue Gounod"],o:weekly("2026-11-04","2026-12-16",[3],"16:00-17:00",["2026-11-11"]),p:U(),de:"Tous les mercredis : à 16 h pour les 5-10 ans, à 16 h 30 pour les 3-4 ans (enfants seuls).",s:[PC,MAG]},
+{n:"La Malle à jeux",c:"Jeune public",l:["Médiathèque, Espace jeunesse","60, rue Gounod"],o:weekly("2026-11-05","2027-05-28",[4,5],"14:00-18:00",["2026-12-25","2027-01-01","2027-05-06"]),p:U(),de:"Chaque jeudi et vendredi, une sélection de jeux de société pour petits et grands. Public familial. Prêt sur place aux inscrits de la médiathèque. Fermé les jours fériés.",s:[SME,PME]},
+{n:"Conte musical",c:"Jeune public",l:["Médiathèque, Espace musique","60, rue Gounod"],o:["2026-11-14 16:30-17:30"],p:U(),de:"Sylvestre Soleil raconte une légende aborigène et les origines du didgeridoo. Pour les enfants à partir de 6 ans.",re:"Inscription sur place ou au 01 46 02 50 08.",s:[SME,PME],u:"https://www.saintcloud.fr/agenda/conte-musical"},
+{n:"Club Ado",c:"Jeune public",l:["Médiathèque, Espace jeunesse","60, rue Gounod"],o:["2026-11-21 15:00-17:00","2026-12-19 15:00"],p:F("Entrée libre"),de:"Échanges sur les livres, BD, mangas, musiques et jeux, à partir du collège. Lancement du Bubble Prix en novembre.",s:[PC,MAG]},
+{n:"Peinture sur porcelaine",c:"Jeune public",l:MA,o:["2026-11-14 16:00-17:30","2026-12-06 16:00-17:30","2027-01-24 16:00-17:30","2027-02-17 16:00-17:30"],p:Pd("5,50 €"),de:"Atelier parents-enfants dès 5 ans.",re:RM,s:[SC,PC,MU],u:"https://www.musee-saintcloud.fr/agenda/peinture-sur-porcelaine-9"},
+{n:"Visite-devinettes",c:"Jeune public",l:MA,o:["2026-11-18 10:30-11:30","2026-12-16 10:30-11:30","2027-01-13 10:30-11:30","2027-02-10 10:30-11:30"],p:Pd("4,50 €"),de:"Atelier parents-enfants dès 3 ans.",re:RM,s:[PC,MU],u:"https://www.musee-saintcloud.fr/agenda/visite-devinettes-0"},
+{n:"Musée de poche",c:"Jeune public",l:MA,o:["2026-11-07 15:30-17:30","2026-12-02 15:30-17:30","2027-01-10 15:30-17:30","2027-01-20 15:30-17:30","2027-02-06 15:30-17:30"],p:Pd("6,50 €"),de:"Atelier 8-12 ans : crée ton exposition miniature et pop-up.",re:RM,s:[PC,MU],u:"https://www.musee-saintcloud.fr/agenda/musee-de-poche"},
+{n:"Le petit restaurateur",c:"Jeune public",l:MA,o:["2026-11-08 16:00-17:00","2026-12-09 16:00-17:00","2027-01-30 16:00-17:00","2027-02-11 16:00-17:00"],p:Pd("4,50 €"),de:"Atelier 5-7 ans : redonne de l’éclat à des œuvres endommagées.",re:RM,note:"4,50 € selon le programme du musée, 5,50 € selon le P’tit Cloud.",s:[MU,PC],u:"https://www.musee-saintcloud.fr/agenda/le-petit-restaurateur-3"},
+{n:"Mystère au musée",c:"Jeune public",l:MA,o:["2026-11-21 16:00-17:00","2026-12-19 16:00-17:00","2027-01-06 16:00-17:00","2027-02-14 16:00-17:00"],p:Pd("4,50 €"),de:"Atelier 5-7 ans : collecte les indices pour découvrir l’auteur d’une peinture retrouvée dans les réserves.",re:RM,s:[PC]},
+{n:"Mon carnet de collectionneur",c:"Jeune public",l:MA,o:["2026-11-22 16:00-17:30","2026-12-12 16:00-17:30","2027-01-03 16:00-17:30","2027-02-13 16:00-17:30"],p:Pd("5,50 €"),de:"Atelier 8-12 ans : façonne ton carnet et inscris ta collection à la plume et à l’encre de Chine.",re:RM,s:[PC]},
+{n:"À la découverte des réserves du musée",c:"Jeune public",l:MA,o:["2026-11-25 16:00-17:30","2027-01-02 16:00-17:30","2027-02-03 16:00-17:30","2027-02-20 16:00-17:30"],p:Pd("5,50 €"),de:"Atelier 5-7 ans : invente un fossile, modèle-le en argile et imagine sa fiche d’inventaire.",re:RM,s:[PC]},
+{n:"Convoyeurs de l’extrême",c:"Jeune public",l:MA,o:["2026-11-28 16:00-17:00","2026-12-20 16:00-17:00","2027-01-16 16:00-17:00","2027-02-12 16:00-17:00"],p:Pd("4,50 €"),de:"Atelier 8-12 ans : retrouve l’œuvre disparue et prépare son transport.",re:RM,s:[PC]},
+{n:"Détails de chefs-d’œuvre",c:"Jeune public",l:MA,o:["2026-12-05 16:00-17:30","2027-01-23 16:00-17:30","2027-02-18 16:00-17:30"],p:Pd("5,50 €"),de:"Atelier 8-12 ans : à la loupe, repère les détails des chefs-d’œuvre, puis transforme-les en œuvre d’argile.",re:RM,s:[PC]},
+{n:"Noyer le poisson",c:"Jeune public",l:MA,o:["2026-12-13 16:00-17:00","2027-01-09 16:00-17:00","2027-01-27 16:00-17:00","2027-02-19 16:00-17:00"],p:Pd("4,50 €"),de:"Atelier 5-7 ans : recrée en papier le double d’objets qui ont perdu leurs couleurs.",re:RM,s:[PC]},
+{n:"Images animées des empereurs",c:"Jeune public",l:DOMM,o:["2026-11-21 15:00"],p:Pd("6 € enfant, 12 € adulte"),de:"Dès 6 ans : après une visite du musée, anime les personnages historiques du Domaine en courtes saynètes.",re:RD,s:[PC,MAG]},
+{n:"Couronne de décembre",c:"Jeune public",l:DOMM,o:["2026-12-12 15:00"],p:Pd("6 € enfant, 12 € adulte"),de:"Dès 6 ans : observe les sapins du Domaine, puis fabrique ta couronne en matériaux naturels ou recyclés.",re:RD,s:[PC]},
+{n:"Contes et histoires au Domaine",c:"Jeune public",l:DOM,r:["2026-12-19","2027-01-03"],p:Pd("De 7,50 à 9 €"),de:"Hommage à Madame d’Aulnoy, grande voix du conte de fées. À partir de 5 ans. Gratuit pour les moins de 26 ans.",re:"Inscription obligatoire à partir du 1er décembre sur domaine-saint-cloud.fr.",s:[PC]},
+{n:"Stage de Noël de l’École des Sports",c:"Jeune public",l:["Gymnase du Centre",""],r:["2026-12-21","2026-12-24"],p:Pd(ST),de:"Jeux de raquettes et sports collectifs pour les 6-12 ans. 20 places.",re:RS,s:[PED,PC],u:"https://www.saintcloud.fr/actualite/stage-de-noel-lecole-des-sports"},
+// Marchés et fêtes
+{n:"Salon de la gastronomie et du vin",c:"Marchés et fêtes",l:CA,o:["2026-11-14 10:00-20:00","2026-11-15 10:00-18:00"],p:F("Entrée libre"),de:"Le Lions Club réunit vignerons, producteurs et artisans. 16e édition.",re:"Renseignements sur gastronomie-vin.fr.",s:[MAG,SC]},
+{n:"Vente de jouets et d’objets de puériculture",c:"Marchés et fêtes",l:SA,o:["2026-11-14 14:00-18:30","2026-11-15 10:00-17:00"],p:U(),de:"Braderie de l’association Les Rendez-vous de Saint-Cloud. Dépôts sans rendez-vous le vendredi 13 novembre de 14 h à 18 h 30 et le samedi 14 de 9 h à 11 h.",re:"Renseignements au 07 81 61 18 70.",s:[MAG,SC,FB]},
+{n:"Vente solidaire de jouets",c:"Marchés et fêtes",l:["Maison de l’Amitié","18, rue des Écoles"],o:["2026-11-18 09:00-18:00","2026-11-19 09:00-18:00"],p:U(),de:"Jouets de seconde main pour tous les âges.",re:"Renseignements au 01 46 02 25 69.",s:[MAG,SC]},
+{n:"Foire aux livres",c:"Marchés et fêtes",l:SA,o:["2026-11-21 14:00-18:30","2026-11-22 10:00-17:00"],p:U(),de:"Vente de livres d’occasion par Les Rendez-vous de Saint-Cloud.",re:"Renseignements au 07 81 61 18 70.",s:[MAG,SC]},
+{n:"Soirée vins et fromages de la paroisse",c:"Marchés et fêtes",l:["Crypte de l’église Stella Matutina","68, avenue du Maréchal-Foch"],o:["2026-11-27 20:00"],p:U(),de:"Soirée conviviale avec vente aux enchères de vins.",re:"Renseignements sur paroissestcloud.fr.",s:[MAG]},
+{n:"Marché de Noël de la paroisse",c:"Marchés et fêtes",l:["Crypte de l’église Stella Matutina","68, avenue du Maréchal-Foch"],o:["2026-11-28 11:00-18:00","2026-11-29 11:00-18:00"],p:U(),de:"Animations pour enfants, restauration et chorale de Noël.",re:"Renseignements sur paroissestcloud.fr.",s:[MAG]},
+{n:"Marché de Noël de l’école allemande",c:"Marchés et fêtes",l:EA,o:["2026-11-28 14:00-18:00"],p:F("Entrée libre"),de:"Produits artisanaux et couronnes de l’Avent.",re:"Renseignements sur idsp.fr.",s:[SC,MAG]},
+{n:"Marché de Noël des Rendez-vous de Saint-Cloud",c:"Marchés et fêtes",l:SA,o:["2026-12-05 10:00-19:00","2026-12-06 10:00-18:00"],p:U(),de:"Pour préparer les cadeaux et les tables de fête.",re:"Renseignements au 07 81 61 18 70.",note:"Le magazine annonce les Salles des Avelines, le Scope le jardin des Avelines.",s:[MAG,SC]},
+{n:"Loto du Rotary Club",c:"Marchés et fêtes",l:CA,o:["2026-12-05 16:00"],p:U(),de:"Au profit de l’Institut Curie et de la recherche contre le cancer.",re:"Renseignements sur rotarysaintcloud.fr.",s:[MAG,SC]},
+{n:"Animations de décembre avec l’ECLA",c:"Marchés et fêtes",l:CA,o:weekly("2026-12-02","2026-12-30",[3]),p:U(),de:"Chaque mercredi de décembre, pour petits et grands.",re:"Renseignements sur ecla.net.",s:[SC]},
+{n:"Noël au jardin",c:"Marchés et fêtes",l:["Jardin des Tourneroches",""],r:["2026-12-12","2026-12-16"],p:U(),de:"Maison du Père Noël, illumination du grand sapin et manèges.",re:"Renseignements sur saintcloud.fr.",s:[SC]},
+// Sport
+{n:"Cross du Figaro",c:"Sport",l:DOM,o:["2026-11-27","2026-11-29"],p:Pd("Inscription payante"),de:"Événement inaugural du Téléthon. Vendredi en nocturne : 5 et 10 km. Dimanche : 5, 10 et 20 km.",re:"Tarifs et inscription sur crossdufigaro.com.",s:[SC,MAG]},
+// Vie locale
+{n:"Café parents : le sommeil",c:"Vie locale",l:BAT,o:["2026-11-05 17:30-19:00"],p:F(),de:"Difficultés d’endormissement, réveils nocturnes et terreurs nocturnes.",re:"Inscription souhaitée : petite-enfance@saintcloud.fr.",s:[SC,MAG],u:"https://www.saintcloud.fr/agenda/cafe-parents"},
+{n:"Réseau des parents",c:"Vie locale",l:CA,o:["2026-11-05 20:30-22:30","2026-12-03 20:30"],p:F(),de:"Le 5 novembre : « Comment éduquer dans un monde qui change ? Savoir allier fermeté et bienveillance », avec Rozenn Le Roux-Mion. Le 3 décembre : les réseaux sociaux, comment accompagner mon ado ?",re:"Inscription sur reseaudesparents.org.",s:[PCA,SC,FB],u:"https://www.saintcloud.fr/agenda/conference-le-reseau-des-parents"},
+{n:"Dialogues de quartiers",c:"Vie locale",l:WEB,o:["2026-11-05 20:00","2026-11-24 20:00","2026-11-26 20:00"],p:F("Gratuit, sur saintcloud.fr"),de:"Échange avec le Maire et les délégués. 5 nov. : Pasteur/Magenta et Montretout/Coutureau. 24 nov. : Hippodrome/Fouilleuse et Val d’or. 26 nov. : Centre/Village et Coteaux/Bords-de-Seine.",re:"Questions à dialogues@saintcloud.fr.",s:[MAG,VI],u:"https://www.saintcloud.fr/actualite/dialogues-de-quartiers-3"},
+{n:"Collecte des banques alimentaires",c:"Vie locale",l:["Monoprix et Intermarché","5, avenue du Maréchal-Foch et 54, rue du Dix-Huit-Juin 1940"],o:["2026-11-06 09:30-18:30","2026-11-07 09:30-18:30","2026-11-08 09:30-12:30"],p:F("Gratuit (dons alimentaires)"),de:"Avec le Rotary Club, vendredi et samedi de 9 h 30 à 12 h 30 et de 14 h 30 à 18 h 30, dimanche de 9 h 30 à 12 h 30. Le club cherche des bénévoles.",re:"Renseignements sur rotarysaintcloud.fr.",s:[MAG,SC],u:"https://www.saintcloud.fr/agenda/collectes-des-banques-alimentaires-du-rotary-club-de-saint-cloud"},
+{n:"Commémoration de l’Armistice de 1918",c:"Vie locale",l:["Hôtel de ville, départ en car","13, place Charles-de-Gaulle"],o:["2026-11-11 10:00-12:00"],p:F("Cérémonie publique"),de:"Départ en car à 10 h, cimetière à 10 h 30, monument aux Morts à 11 h 15.",s:[MAG,SC]},
+{n:"Atelier « Se connaître soi-même pour vendre »",c:"Vie locale",l:EE,o:["2026-11-16"],p:U(),de:"Premier atelier du cycle Saint-Cloud Entreprises pour les entrepreneurs. Horaire à venir sur saintcloud.fr.",s:[SC,MAG]},
+{n:"Distribution de composteurs",c:"Vie locale",l:["Service Voirie","18, rue de Garches"],o:["2026-11-18 14:00-16:00"],p:U(),de:"Composteurs et lombricomposteurs.",re:"Renseignements au 01 47 71 54 26.",s:[MAG]},
+{n:"Conseil municipal",c:"Vie locale",l:["Hôtel de ville et en direct sur saintcloud.fr","13, place Charles-de-Gaulle"],o:["2026-11-19 21:00","2026-12-17 21:00"],p:F("Séance publique"),de:"Le 19 novembre : débat sur les orientations budgétaires.",s:[MAG,SC]},
+{n:"Cocktail d’accueil des nouveaux arrivants",c:"Vie locale",l:AVF,o:["2026-11-21 17:30"],p:U(),de:"En présence du Maire, précédé d’une visite de la ville en car pour les 40 premiers inscrits.",re:"Inscription obligatoire : avf.saintcloud@orange.fr.",s:[MAG]},
+{n:"Webinaire OSER 92 : l’IA et la recherche d’emploi",c:"Vie locale",l:WEB,o:["2026-11-26"],p:F("Inscription gratuite avant le 20 novembre"),de:"« L’IA, de votre recherche d’emploi à votre futur poste ». Ouvert à tous.",re:"Inscription sur oser92.fr.",s:[MAG]},
+{n:"Atelier facturation électronique",c:"Vie locale",l:EE,o:["2026-11-30 09:00"],p:U(),de:"Pour les entrepreneurs, avec Ghania Boukharouba, experte-comptable.",re:"Renseignements au 01 46 02 46 58.",s:[MAG,VI],u:"https://www.saintcloud.fr/agenda/atelier-facturation-electronique-0"},
+{n:"Apéro Network",c:"Vie locale",l:["Lieu à confirmer",""],o:["2026-12-03 18:30"],p:U(),de:"Soirée conviviale des entrepreneurs et acteurs économiques de Saint-Cloud.",s:[SC]},
+{n:"Journée d’hommage aux morts de la guerre d’Algérie",c:"Vie locale",l:["Cimetière","114, avenue du Maréchal-Foch"],o:["2026-12-05 10:00-11:00"],p:F("Cérémonie publique"),de:"Hommage aux morts pour la France pendant la guerre d’Algérie et les combats du Maroc et de la Tunisie.",s:[SC]},
+{n:"Soirée jeux de société",c:"Loisirs",l:["Le Carré, So Art Café","3 bis, rue d’Orléans"],o:["2026-11-06 19:00"],p:F("Entrée libre"),de:"Dès 10 ans (moins de 13 ans accompagnés). Buffet partagé : apportez de quoi grignoter.",re:"Réservation conseillée sur ecla.net.",s:[SC]},
+{n:"Club lecture adulte",c:"Loisirs",l:MED,o:["2026-11-18 11:00-12:00"],p:U(),de:"Les coups de cœur des bibliothécaires, en livres et en films.",re:"Sur inscription au 01 46 02 50 08.",s:[SME,PME]},
+// Saison 3 Pierrots, janvier à mai 2027
+{n:"L’Avare",c:"Spectacles",l:P3,o:["2027-01-14 20:30-23:00"],p:Pd(TA),de:"Molière en mise en scène contemporaine : la troupe joue avec les objets apportés par le public. 2 h 30. "+SA3,re:"Catégorie A.",s:[TP],u:"https://www.3pierrots.fr/spectacles/lavare"},
+{n:"L’Affaire Rosalind Franklin",c:"Spectacles",l:P3,o:["2027-01-28 20:30-21:40"],p:Pd(TC),de:"Comment les recherches de Rosalind Franklin sur l’ADN ont été utilisées sans son accord. 1 h 10, à partir de 12 ans. "+SA3,re:"Catégorie C.",s:[TP],u:"https://www.3pierrots.fr/spectacles/laffaire-rosalind-franklin"},
+{n:"Cléopâtre – La Reine louve",c:"Spectacles",l:P3,o:["2027-02-04 20:30-22:20"],p:Pd(TB),de:"Une jeune Cléopâtre défend l’Égypte face à Rome. 1 h 50, à partir de 14 ans. "+SA3,re:"Catégorie B.",s:[TP],u:"https://www.3pierrots.fr/spectacles/cleopatre-la-reine-louve"},
+{n:"L’Illusion comique",c:"Spectacles",l:P3,o:["2027-02-23 20:30-22:00"],p:Pd(TB),de:"Théâtre classique : un père autoritaire traque son fils en fuite. 1 h 30. "+SA3,re:"Catégorie B.",s:[TP],u:"https://www.3pierrots.fr/spectacles/lillusion-comique"},
+{n:"Juste Irena",c:"Spectacles",l:P3,o:["2027-02-28 16:00-17:20"],p:Pd(TD),de:"Irena Sendler raconte ses actes héroïques de la Seconde Guerre mondiale. 1 h 20, à partir de 10 ans. "+SA3,re:"Catégorie D.",s:[TP],u:"https://www.3pierrots.fr/spectacles/juste-irena"},
+{n:"Ailleurs/Après",c:"Spectacles",l:P3,o:["2027-03-04 20:30-21:50"],p:Pd(TC),de:"Une jeune femme entraîne son voisin veuf vers l’Ouest dans sa vieille décapotable. 1 h 20. "+SA3,re:"Catégorie C.",s:[TP],u:"https://www.3pierrots.fr/spectacles/ailleursapres"},
+{n:"La Folle Journée ou Le Mariage de Figaro",c:"Spectacles",l:P3,o:["2027-03-09 20:30-22:15"],p:Pd(TAP),de:"Beaumarchais, mis en scène par Léna Bréban. 1 h 45. "+SA3,re:"Catégorie A+.",s:[TP],u:"https://www.3pierrots.fr/spectacles/la-folle-journee-ou-le-mariage-de-figaro"},
+{n:"Le Problème Lapin – Cartographie 7",c:"Spectacles",l:P3,o:["2027-03-16 20:30-21:45"],p:Pd(TC),de:"Comédie de Frédéric Ferrer sur les lapins et le déclin du vivant. 1 h 15, à partir de 12 ans. "+SA3,re:"Catégorie C.",s:[TP],u:"https://www.3pierrots.fr/spectacles/le-probleme-lapin-cartographie-7"},
+{n:"Dans la peau de Cyrano",c:"Spectacles",l:P3,o:["2027-04-01 20:30-21:45"],p:Pd(TC),de:"Seul en scène sur Colin, un collégien qui se sent différent. 1 h 15, à partir de 10 ans. "+SA3,re:"Catégorie C.",s:[TP],u:"https://www.3pierrots.fr/spectacles/dans-la-peau-de-cyrano"},
+{n:"Du charbon dans les veines",c:"Spectacles",l:P3,o:["2027-04-22 20:30-21:50"],p:Pd(TAP),de:"1958, une petite ville minière du Nord, la Coupe du monde à la télévision. 1 h 20, à partir de 11 ans. "+SA3,re:"Catégorie A+.",s:[TP],u:"https://www.3pierrots.fr/spectacles/du-charbon-dans-les-veines"},
+{n:"En attendant Bojangles",c:"Spectacles",l:P3,o:["2027-04-27 20:30-21:50"],p:Pd(TB),de:"Une mère fantasque entraîne sa famille dans une fête permanente. 1 h 20. "+SA3,re:"Catégorie B.",s:[TP],u:"https://www.3pierrots.fr/spectacles/en-attendant-bojangles"},
+{n:"L’Enclos – Prix du Théâtre 13",c:"Spectacles",l:P3,o:["2027-05-04 20:30-21:50"],p:Pd(TD),de:"Grégoire, dépendant aux drogues dures, entre centre de désintoxication et maison familiale. 1 h 20, à partir de 14 ans. "+SA3,re:"Catégorie D.",s:[TP],u:"https://www.3pierrots.fr/spectacles/lenclos-prix-du-theatre-13"},
+{n:"Flora Fishbach",c:"Musique",l:P3,o:["2027-01-22 20:30-21:50"],p:Pd(TA),de:"Concert festif et lumineux. 1 h 20. "+SA3,re:"Catégorie A.",s:[TP],u:"https://www.3pierrots.fr/spectacles/flora-fishbach"},
+{n:"Athéna & Chains of Soul – Spirit of Aretha",c:"Musique",l:P3,o:["2027-05-28 20:30-21:50"],p:Pd(TB),de:"Hommage moderne à Aretha Franklin. 1 h 20. "+SA3,re:"Catégorie B.",s:[TP],u:"https://www.3pierrots.fr/spectacles/athena-chains-soul-spirit-aretha"},
+{n:"Cosmix 2.0",c:"Jeune public",l:P3,o:["2027-01-31 16:00-16:50"],p:Pd(TD),de:"Jonglage et nouveau cirque, avec lumières LED et laser. 50 min, dès 5 ans. "+SA3,re:"Catégorie D.",s:[TP],u:"https://www.3pierrots.fr/spectacles/cosmix-20"},
+{n:"Au cœur de la matière",c:"Conférences",l:MA,o:["2027-01-17 16:00-17:00"],p:F(),de:"Philippe Walter, chercheur au CNRS : retracer l’histoire des œuvres par l’analyse de leurs matériaux, des pigments préhistoriques à Léonard de Vinci.",re:RM,s:[MU],u:"https://www.musee-saintcloud.fr/agenda/au-coeur-de-la-matiere"},
+{n:"L’accord parfait",c:"Musique",l:MA,o:["2027-02-07 16:00-17:00"],p:F(),de:"Concert de musique de chambre par ProQuartet.",re:RM,s:[MU],u:"https://www.musee-saintcloud.fr/agenda/laccord-parfait"},
+{n:"Stage d’hiver : acrosport et sports collectifs",c:"Jeune public",l:["Gymnase Huet",""],r:["2027-02-08","2027-02-12"],p:Pd(ST),de:"École des Sports, 6-12 ans. 24 places.",re:RS+" Inscription à partir du 4 janvier à 10 h.",s:[PED,PC]},
+{n:"Stage d’hiver : jeux d’opposition et capoeira",c:"Jeune public",l:["Gymnase Saint-Exupéry",""],r:["2027-02-15","2027-02-19"],p:Pd(ST),de:"École des Sports, 6-12 ans. 24 places. Sortie Gopark.",re:RS+" Inscription à partir du 4 janvier à 10 h.",s:[PED,PC]},
+{n:"Stage de printemps : Koh Lanta Junior",c:"Jeune public",l:["Gymnase Fouilleuse",""],r:["2027-04-05","2027-04-09"],p:Pd(ST),de:"École des Sports, 6-8 ans. 20 places.",re:RS+" Inscription à partir du 22 février à 10 h.",s:[PED]},
+{n:"Stage de printemps : sports nautiques et collectifs",c:"Jeune public",l:["Gymnase des Tourneroches",""],r:["2027-04-12","2027-04-16"],p:Pd(ST),de:"École des Sports, 8-12 ans. 16 places. Brevet de natation de 25 m obligatoire.",re:RS+" Inscription à partir du 22 février à 10 h.",s:[PED]},
+{n:"Stage d’été : savoir rouler et multisports",c:"Jeune public",l:["Gymnase du Centre",""],r:["2027-07-05","2027-07-09"],p:Pd(ST),de:"École des Sports, 6-8 ans. 24 places.",re:RS+" Inscription à partir du 19 avril à 10 h.",s:[PED]},
+{n:"Stage d’été : beach-volley, piscine et multisports",c:"Jeune public",l:["Gymnase Fouilleuse",""],r:["2027-07-05","2027-07-09"],p:Pd(ST),de:"École des Sports, 8-12 ans. 30 places. Brevet de natation de 25 m obligatoire.",re:RS+" Inscription à partir du 19 avril à 10 h.",s:[PED]},
+{n:"Stage d’été : multisports",c:"Jeune public",l:["Gymnase Fouilleuse",""],r:["2027-08-23","2027-08-27"],p:Pd(ST),de:"École des Sports, 6-12 ans. 30 places. Sortie char à voile.",re:RS+" Inscription à partir du 19 avril à 10 h.",s:[PED]},
+{n:"Keren Ann et Irène Jacob – Où es-tu ?",c:"Musique",l:P3,o:["2027-05-18 20:30-21:35"],p:Pd(TB),de:"Une création musicale et poétique. 1 h 05.",re:"Catégorie B. Carte Passion de 10 à 23 €.",s:[PS]},
+{n:"Concert du Nouvel An du conservatoire",c:"Musique",l:P3,o:["2027-01-10 11:00"],p:F("Entrée libre dans la limite des places disponibles"),de:"L’harmonie, le chœur et l’orchestre symphonique du conservatoire de Saint-Cloud.",re:"Renseignements sur conservatoiresaintcloud.com.",s:[PS]},
+{n:"Rencontre Dialogues ! avec l’équipe des 3 Pierrots",c:"Vie locale",l:P3,o:["2027-01-09 16:00"],p:U(),de:"Échange sur la programmation artistique : partagez vos idées et vos envies.",s:[PS]},
+{n:"Tartuffe de Molière",c:"Spectacles",l:CA,o:["2026-12-10 20:30","2026-12-11 20:30"],p:U(),de:"Mise en scène par la troupe des Baladins, dans le cadre de L’Œuvre d’Orient, pour une collecte de fonds.",s:[PCA]},
+{n:"Animation autour des icônes",c:"Expositions et visites",l:CA,o:["2026-12-10 19:00-20:15","2026-12-11 19:00-20:15"],p:U(),de:"Sélection d’ouvrages, découverte du prix littéraire de L’Œuvre d’Orient et vente de livres.",s:[PCA]},
+{n:"Conférence du Cercle féminin d’amitié européenne",c:"Conférences",l:CA,o:["2026-12-07 15:00"],p:U(),de:"Rencontre-conférence mensuelle. Sujet à venir.",re:"Renseignements : cfae.saintcloud@gmail.com.",s:[PCA,SC]},
+{n:"Les p’tits écureuils à la page",c:"Jeune public",l:["Médiathèque, Espace jeunesse","60, rue Gounod"],o:["2026-11-28 10:30-11:30"],p:F("Entrée libre dans la limite des places disponibles"),de:"Club lecture pour les 8-10 ans : romans, BD, mangas et documentaires.",s:[SME]},
+{n:"À vos chevalets !",c:"Expositions et visites",l:MA,o:["2027-02-21 15:45-16:45","2027-02-21 17:00-18:00"],p:F(),de:"Pratique artistique pour la clôture de l’exposition, avec Lilyana Stankova, artiste peintre.",re:RM,s:[PMU]},
+{n:"Un dimanche à la campagne",c:"Cinéma",l:MA,o:["2027-01-31 14:30-16:30"],p:F(),de:"Film de Bertrand Tavernier (1984), présenté et débattu par Damien Chantrenne, directeur du musée.",re:RM,s:[PMU]},
+{n:"Regards documentaires",c:"Cinéma",l:P3,o:sl(["2027-01-17","2027-03-14","2027-04-25"],"16:00"),p:Pd("8 €"),de:"Séance documentaire suivie d’une rencontre. Films à venir.",re:CINE,s:[PS]},
+{n:"Ciné-club Mythiques : Quand passent les cigognes",c:"Cinéma",l:P3,o:["2027-01-11 20:00-21:37"],p:Pd("8 €"),de:"De Mikhail Kalatozov, 1 h 37, 1958. Débat animé par René Marx.",re:CINE,s:[PCC]},
+{n:"Ciné-club Mythiques : Le Cuirassé Potemkine",c:"Cinéma",l:P3,o:["2027-02-01 20:00-21:15"],p:Pd("8 €"),de:"De Sergueï Eisenstein et Grigori Aleksandrov, 1 h 15, 1926. Débat animé par René Marx.",re:CINE,s:[PCC]},
+{n:"Ciné-club Mythiques : Princesse Mononoké",c:"Cinéma",l:P3,o:["2027-03-22 20:00-22:15"],p:Pd("8 €"),de:"De Hayao Miyazaki, 2 h 15. Débat animé par Thomas Fouet.",re:CINE,s:[PCC]},
+{n:"Ciné-club Mythiques : Huit et demi",c:"Cinéma",l:P3,o:["2027-04-19 20:00-22:18"],p:Pd("8 €"),de:"De Federico Fellini, 2 h 18, 1963. Débat animé par René Marx.",re:CINE,s:[PCC]},
+{n:"Ciné-club Mythiques : Voyage à Tokyo",c:"Cinéma",l:P3,o:["2027-05-10 20:00-22:16"],p:Pd("8 €"),de:"De Yasujirô Ozu, 2 h 16. Débat animé par Jean-Charles Fitoussi.",re:CINE,s:[PCC]},
+{n:"Ciné-club Mythiques : Une journée particulière",c:"Cinéma",l:P3,o:["2027-06-14 20:00-21:45"],p:Pd("8 €"),de:"D’Ettore Scola, 1 h 45, 1977. Débat animé par Thomas Fouet.",re:CINE,s:[PCC]},
+{n:"Opéra Live : La Fanciulla del West",c:"Cinéma",l:P3,o:["2027-01-23 18:55"],p:Pd("20 ou 30 €"),de:"De Puccini, en italien sous-titré, un entracte. Retransmission du Metropolitan Opera de New York.",re:"Plein tarif 30 €, tarif réduit 20 €. Réservation sur cinema3pierrots.fr.",s:[POP]},
+{n:"Comédie-Française : Le Cid",c:"Cinéma",l:P3,o:["2027-03-07 16:00"],p:Pd("12 ou 22 €"),de:"De Corneille, retransmis en différé.",re:"Plein tarif 22 €, tarif réduit 12 €. Réservation sur cinema3pierrots.fr.",s:[POP]},
+{n:"Opéra de Paris : Notre-Dame de Paris",c:"Cinéma",l:P3,o:["2027-03-14 16:00"],p:Pd("20 ou 30 €"),de:"Ballet de Roland Petit, retransmis en différé.",re:"Plein tarif 30 €, tarif réduit 20 €. Réservation sur cinema3pierrots.fr.",s:[POP]},
+{n:"Opéra Live : Silent Night",c:"Cinéma",l:P3,o:["2027-03-20 17:55"],p:Pd("20 ou 30 €"),de:"De Kevin Puts, sous-titré en français, un entracte. Retransmission du Metropolitan Opera.",re:"Plein tarif 30 €, tarif réduit 20 €. Réservation sur cinema3pierrots.fr.",s:[POP]},
+{n:"Opéra Live : Otello",c:"Cinéma",l:P3,o:["2027-04-24 18:55"],p:Pd("20 ou 30 €"),de:"De Verdi, en italien sous-titré, un entracte. Retransmission du Metropolitan Opera.",re:"Plein tarif 30 €, tarif réduit 20 €. Réservation sur cinema3pierrots.fr.",s:[POP]},
+{n:"Mon Petit Ciné : Ernest et Célestine, le voyage en Charabie",c:"Jeune public",l:P3,o:["2027-01-06 15:00-16:20"],p:Pd("8 €"),de:"Dès 3 ans, 1 h 20. Séance suivie d’un atelier créatif.",re:RPC,s:[PJP]},
+{n:"Mon Petit Ciné : Non-Non dans l’espace",c:"Jeune public",l:P3,o:["2027-02-24 15:00-15:52"],p:Pd("8 €"),de:"Dès 3 ans, 52 min. Séance suivie d’un atelier créatif.",re:RPC,s:[PJP]},
+{n:"Mon Petit Ciné : Pas pareil… et pourtant !",c:"Jeune public",l:P3,o:["2027-03-10 15:00-15:40"],p:Pd("8 €"),de:"Dès 3 ans, 40 min. Séance suivie d’un atelier créatif.",re:RPC,s:[PJP]},
+{n:"Mon Petit Ciné : Les fantastiques livres volants de M. Morris Lessmore",c:"Jeune public",l:P3,o:["2027-04-21 15:00-15:50"],p:Pd("8 €"),de:"Dès 6 ans, 50 min, cinq courts-métrages. Séance suivie d’un atelier créatif.",re:RPC,s:[PJP]},
+{n:"Mon Petit Ciné : Les extraordinaires aventures de Morph",c:"Jeune public",l:P3,o:["2027-05-19 15:00-15:40"],p:Pd("8 €"),de:"Dès 3 ans, 40 min. Séance suivie d’un atelier créatif.",re:RPC,s:[PJP]},
+{n:"Mon Petit Ciné : Les nouvelles aventures de Rita et Machin",c:"Jeune public",l:P3,o:["2027-06-09 15:00-15:45"],p:Pd("8 €"),de:"Dès 3 ans, 45 min. Séance suivie d’un atelier créatif.",re:RPC,s:[PJP]},
+{n:"Atelier comédie musicale",c:"Jeune public",l:P3,o:["2026-12-06 17:45-19:15"],p:Pd("5 €"),de:"Dès 5 ans, 1 h 30, autour de Sur les pas de Léonard de Vinci.",re:RAT,s:[PJP]},
+{n:"Atelier Superpouvoirs de la lumière",c:"Jeune public",l:P3,o:["2027-01-31 17:15-18:45"],p:Pd("5 €"),de:"Dès 5 ans, 1 h 30, avec les Savants fous, autour de Cosmix 2.0.",re:RAT,s:[PJP]},
+{n:"Atelier marionnettes",c:"Jeune public",l:P3,o:["2027-02-28 17:45-19:45"],p:Pd("5 €"),de:"Dès 10 ans, 2 h, autour de Juste Irena.",re:RAT,s:[PJP]},
+{n:"Immobile & Rebondi #2",c:"Jeune public",l:P3,o:["2027-05-12 15:00-15:35"],p:Pd("De 9 à 12 €"),de:"Danse et cirque dès 3 ans, 35 min. Accessible aux personnes malentendantes.",re:"Carte Passion : 10 €.",s:[PJP,PS]},
+{n:"Atelier Dessin et rebonds",c:"Jeune public",l:P3,o:["2027-05-12 16:00-17:30"],p:Pd("5 €"),de:"Dès 3 ans, 1 h 30, autour d’Immobile & Rebondi #2.",re:RAT,s:[PJP]},
+{n:"Vivantes !",c:"Jeune public",l:P3,o:["2027-05-23 16:00-16:55"],p:Pd(TD),de:"Théâtre contemporain dès 8 ans, 55 min.",re:"Catégorie D.",s:[PJP,PS]},
+{n:"Balades ornithologiques",c:"Jeune public",l:P3,o:["2027-05-23 09:30-10:45","2027-05-23 11:00-12:15"],p:Pd("5 €"),de:"Dès 8 ans, 1 h 15, autour de Vivantes !.",re:RAT,s:[PJP]},
+{n:"Atelier théâtre autour de Vivantes !",c:"Jeune public",l:P3,o:["2027-05-23 17:30-19:30"],p:Pd("5 €"),de:"Dès 8 ans, 2 h.",re:RAT,s:[PJP]},
+{n:"Rencontre avec Lucie Castel",c:"Conférences",l:["Librairie Les Cyclades","Saint-Cloud"],o:["2026-11-07 15:30"],p:U(),de:"Rencontre autour de la saga Le Pacte des Héritières.",note:"Annonce vue seulement dans le groupe Facebook : à confirmer auprès de la librairie.",s:[FB]},
+{n:"Les gardiens de la planète",c:"Vie locale",l:["Dans le territoire Paris Ouest La Défense",""],r:["2026-10-30","2026-11-22"],p:U(),de:"Challenge « Zéro Déchets » de POLD, 3e année.",re:"Renseignements sur parisouestladefense.fr.",note:"Le Scope imprime « du 30 au 22 novembre ». Le 30 octobre comme date de début est une déduction.",s:[SC]},
+// Réservé aux adhérents
+{n:"Peinture sur porcelaine à l’ECLA",c:"Adhérents",m:1,l:CA,o:sl(["2026-11-05","2026-11-19","2026-12-03","2026-12-08","2026-12-17","2027-01-14","2027-01-28","2027-02-25","2027-03-11","2027-03-25","2027-04-22","2027-05-20","2027-06-03","2027-06-17"],"19:30-21:30"),p:U(),de:"Atelier non hebdomadaire de l’ECLA.",re:RE,s:[SEC]},
+{n:"Atelier libre photo",c:"Adhérents",m:1,l:CA,o:["2026-11-05","2026-11-19","2026-12-03","2026-12-17","2027-01-07","2027-01-21","2027-02-04","2027-03-04","2027-03-18","2027-04-01"],p:U(),de:"Le 1er et le 3e jeudi du mois, hors vacances scolaires. Horaire auprès de l’ECLA.",re:RE,s:[SEC]},
+{n:"Atelier 4 mains 2-6 ans",c:"Adhérents",m:1,l:CA,o:sl(["2026-11-07","2026-11-28","2026-12-12","2027-01-16","2027-02-27","2027-03-20","2027-04-24","2027-06-05"],"09:30-10:30","10:30-12:00"),p:U(),de:"Avec Lilyana. 2-3 ans de 9 h 30 à 10 h 30, 4-6 ans de 10 h 30 à 12 h.",re:RE,s:[SEC]},
+{n:"Atelier 4 mains 3-7 ans",c:"Adhérents",m:1,l:CA,o:sl(["2026-11-14","2026-12-05","2027-01-09","2027-01-30","2027-03-13","2027-05-15","2027-05-29","2027-06-12"],"11:00-12:30"),p:U(),de:"Avec Betty.",re:RE,s:[SEC]},
+{n:"Modèle vivant",c:"Adhérents",m:1,l:CA,o:sl(["2026-11-09","2026-11-16","2026-11-23","2026-11-30","2026-12-07","2026-12-14"],"14:00-16:30"),p:U(),de:"Dates de 2027 à venir.",re:RE,s:[SEC]},
+{n:"Dorure",c:"Adhérents",m:1,l:CA,o:sl(["2026-11-27","2026-12-18","2026-12-19","2027-01-22","2027-03-19","2027-03-20","2027-05-21","2027-05-22","2027-05-24"],"09:30-12:30","13:30-16:30"),p:U(),de:"Atelier non hebdomadaire de l’ECLA.",re:RE,s:[SEC]},
+{n:"Conversation espagnole",c:"Adhérents",m:1,l:CA,o:sl(["2026-11-12","2026-12-10","2027-01-14","2027-02-25","2027-03-11","2027-04-22","2027-05-13"],"19:30-20:30"),p:U(),de:"Atelier non hebdomadaire de l’ECLA.",re:RE,s:[SEC]},
+{n:"Cours de stand-up pour adultes",c:"Adhérents",m:1,l:CA,o:weekly("2026-11-04","2026-12-16",[3],"20:00-21:30"),p:Pd("346 € l’année"),de:"Chaque mercredi, avec Vianney Henry.",re:"Tarif réduit : 315 €. Inscriptions sur ecla.net.",s:[SC]},
+{n:"Cours de stand-up 18-30 ans",c:"Adhérents",m:1,l:P3,o:weekly("2026-11-05","2026-12-17",[4],"18:30-20:00"),p:Pd("346 € l’année"),de:"Chaque jeudi, avec Adrien de Poncins et Diego Boisseau.",re:"Tarif réduit : 315 €. Inscriptions sur ecla.net.",s:[SC]},
+{n:"Atelier théâtre adultes",c:"Adhérents",m:1,l:["Écoles des Coteaux, de Montretout ou gymnase Saint-Exupéry",""],o:weekly("2026-11-04","2026-12-16",[1,2,3],"20:00-22:00",["2026-11-11"]),p:U(),de:"Le Cours de la Scène, lundi, mardi et mercredi. Cours d’essai possible.",re:"Renseignements au 07 72 22 84 99 ou 06 09 16 16 06.",s:[SC]},
+{n:"Yoga Iyengar adultes",c:"Adhérents",m:1,l:["Écoles des Coteaux, de Montretout ou gymnase Saint-Exupéry",""],o:[...weekly("2026-11-05","2026-12-17",[4],"19:00-20:30"),...weekly("2026-11-07","2026-12-19",[6],"10:00-11:30")].sort(),p:U(),de:"Le Cours de la Scène, jeudi soir et samedi matin. Cours d’essai possible.",re:"Renseignements au 07 72 22 84 99 ou 06 09 16 16 06.",s:[SC]},
+{n:"Éveil théâtral 3-6 ans",c:"Adhérents",m:1,l:["Écoles des Coteaux, Saint-Exupéry ou Montretout",""],o:[...weekly("2026-11-04","2026-12-16",[3],"15:30-16:30",["2026-11-11"]),...weekly("2026-11-07","2026-12-19",[6],"11:30-12:30")].sort(),p:U(),de:"Le Cours de la Scène. Théâtre aussi pour les 7-12 ans du mardi au samedi et les 13-17 ans, horaires auprès de l’association.",re:"Renseignements au 07 72 22 84 99 ou 06 09 16 16 06.",s:[PC]},
+{n:"Atelier Scrabble AVF",c:"Adhérents",m:1,l:AVF,o:[...weekly("2026-11-07","2026-12-19",[6],"10:00-12:00"),...weekly("2026-11-10","2026-12-15",[2],"15:00-17:00")].sort(),p:F(),de:"Mardi après-midi et samedi matin. Inscription souhaitée.",re:RAVF,s:[SC]},
+{n:"Promenade dans le Domaine national AVF",c:"Adhérents",m:1,l:DOM,o:weekly("2026-11-04","2026-12-16",[3],"10:00-11:30",["2026-11-11"]),p:F(),de:"Chaque mercredi. Certificat médical annuel obligatoire.",re:RAVF,s:[SC]},
+{n:"Conversation en français AVF",c:"Adhérents",m:1,l:AVF,o:weekly("2026-11-05","2026-12-17",[4],"10:00-12:00"),p:Pd("15 € l’année"),de:"Chaque jeudi.",re:RAVF,s:[SC]},
+{n:"Atelier dessin et aquarelle AVF",c:"Adhérents",m:1,l:AVF,o:["2026-12-02 10:00-12:00"],p:Pd("15 € le trimestre"),de:"Une séance par mois.",re:RAVF,s:[SC]},
+{n:"Bal aux Heures Claires",c:"Adhérents",m:1,l:["Résidence Les Heures Claires","2, rue Henri-Regnault"],o:["2026-11-06 14:00"],p:U(),de:"Espace d’animation des Coteaux.",re:RCOT,s:[SC,MAG]},
+{n:"Gymnastique douce",c:"Adhérents",m:1,l:EC,o:["2026-11-05 10:15-11:15","2026-11-12 10:15-11:15","2026-11-19 10:15-11:15","2026-11-26 10:15-11:15","2026-12-03 10:15-11:15","2026-12-10 10:15-11:15","2026-12-17 10:15-11:15"],p:U(),de:"Sur inscription.",re:RCOT,s:[SC,MAG]},
+{n:"Ateliers libres : arts plastiques et fil en aiguille",c:"Adhérents",m:1,l:EC,o:["2026-11-05","2026-11-12","2026-11-19","2026-11-26","2026-12-10","2026-12-17","2026-12-24","2026-12-31"].map(d=>d+" 13:30-16:30"),p:U(),de:"Espace d’animation des Coteaux.",re:RCOT,s:[SC,MAG]},
+{n:"Atelier informatique débutants",c:"Adhérents",m:1,l:EC,o:["2026-11-06 10:00-12:00","2026-11-27 10:00-12:00","2026-12-18 10:00-12:00"],p:U(),de:"Pour débutants et semi-débutants, sur inscription.",re:RCOT,s:[SC,MAG]},
+{n:"Jeux de société",c:"Adhérents",m:1,l:EC,o:["2026-11-09","2026-11-13","2026-11-20","2026-11-23","2026-12-07","2026-12-11","2026-12-18","2026-12-21","2026-12-28"].map(d=>d+" 13:30"),p:U(),de:"Espace d’animation des Coteaux.",re:RCOT,s:[SC,MAG]},
+{n:"Conférence informatique",c:"Adhérents",m:1,l:EC,o:["2026-11-10","2026-11-17","2026-12-08","2026-12-15"],p:U(),de:"Sur inscription. Horaire non précisé.",re:RCOT,s:[SC,MAG]},
+{n:"Gymnastique cérébrale",c:"Adhérents",m:1,l:EC,o:["2026-11-17 14:30","2026-12-08 14:30"],p:U(),de:"Espace d’animation des Coteaux.",re:RCOT,s:[SC,MAG]},
+{n:"Cercle de lecture",c:"Adhérents",m:1,l:EC,o:["2026-11-24 10:00","2026-12-09 10:00"],p:U(),de:"Espace d’animation des Coteaux.",re:RCOT,s:[SC,MAG]},
+{n:"Atelier cuisine des Coteaux",c:"Adhérents",m:1,l:EC,o:["2026-11-24 14:30"],p:U(),de:"Espace d’animation des Coteaux.",re:RCOT,s:[SC,MAG]},
+{n:"Atelier d’art floral",c:"Adhérents",m:1,l:EC,o:["2026-12-16 09:00-12:00","2026-12-16 13:30-16:00"],p:Pd("37 €"),de:"Sur inscription.",re:RCOT,s:[SC]},
+{n:"Entretiens technologiques AVF",c:"Adhérents",m:1,l:AVF,o:["2026-11-06 10:00-12:00","2026-11-27 10:00-12:00","2026-12-11 10:00-12:00"],p:Pd("5 € la séance"),de:"Questions sur l’informatique ou les téléphones. 20 € le trimestre.",re:RAVF,s:[SC]},
+{n:"Dictée AVF",c:"Adhérents",m:1,l:PJ,o:["2026-11-16 14:30-16:30"],p:U(),de:"Association AVF Saint-Cloud.",re:RAVF,s:[SC]},
+{n:"Rencontre autour d’un livre ou d’un auteur",c:"Adhérents",m:1,l:AVF,o:["2026-11-19 14:30-16:30","2026-12-17 14:30-16:30"],p:F(),de:"Association AVF Saint-Cloud.",re:RAVF,s:[SC]},
+{n:"Soirée œnologie AVF",c:"Adhérents",m:1,l:PJ,o:["2026-11-19 19:30-22:30"],p:Pd("19 €"),de:"Atelier-dégustation.",re:RAVF,s:[SC]},
+{n:"Visite des coulisses du musée avec l’AVF",c:"Adhérents",m:1,l:MA,o:["2026-12-10 14:45"],p:Pd("10 €"),de:"Visite guidée suivie d’un thé ou café gourmand.",re:RAVF,s:[SC]},
+];
+EVENTS.forEach(e=>{if(e.c==="Cinéma"||/^(Mon Petit Ciné|Courts-métrages de Noël)/.test(e.n))e.n="Cinéma : "+e.n});
+/*DATA-END*/
+/*LOGIC-START*/
+const pad=n=>String(n).padStart(2,"0");
+function parseOcc(str){const[d,t]=str.split(" ");if(!t)return{day:d,allDay:true,end:d};const[a,b]=t.split("-");return{day:d,allDay:false,start:a,end:b||null}}
+function addMin(hm,m){const[h,mi]=hm.split(":").map(Number),x=h*60+mi+m;return pad(Math.floor(x/60)%24)+":"+pad(x%60)}
+function addDays(day,n){return new Date(Date.parse(day+"T00:00Z")+n*864e5).toISOString().slice(0,10)}
+function compact(day){return day.replace(/-/g,"")}
+function parisOffset(day){const y=+day.slice(0,4),last=m=>{const d=new Date(Date.UTC(y,m+1,0));return addDays(d.toISOString().slice(0,10),-d.getUTCDay())};return day>=last(2)&&day<last(9)?2:1}
+function toUTC(day,hm){const o=parisOffset(day),[h,m]=hm.split(":").map(Number);return new Date(Date.UTC(+day.slice(0,4),+day.slice(5,7)-1,+day.slice(8,10),h-o,m))}
+function stamp(d){return d.toISOString().replace(/[-:]/g,"").replace(/\.\d+Z/,"Z")}
+function occsOf(e){if(!e.r)return e.o.map(parseOcc);const n=(Date.parse(e.r[1]+"T00:00Z")-Date.parse(e.r[0]+"T00:00Z"))/864e5;if(n>6)return[{}];const out=[];for(let i=0;i<=n;i++){const d=addDays(e.r[0],i);out.push({day:d,allDay:true,end:d})}return out}
+function slot(e,occ){ // normalised agenda slot
+  if(e.r&&!occ.day)return{allDay:true,from:e.r[0],toExcl:addDays(e.r[1],1)};
+  if(occ.allDay)return{allDay:true,from:occ.day,toExcl:addDays(occ.day,1)};
+  const end=occ.end||addMin(occ.start,120);
+  return{allDay:false,day:occ.day,start:occ.start,end,estimated:!occ.end};
+}
+function place(e){const[a,b]=e.l;if(a==="En ligne")return"En ligne";return[a,b].filter(Boolean).join(", ")+(/Saint-Cloud/.test(a+b)?"":", 92210 Saint-Cloud")}
+function descr(e){const pr=e.p[0]==="f"?e.p[1]:e.p[0]==="p"?e.p[1]:"Tarif non précisé";return[e.de,e.re,"Tarif : "+pr,e.u].filter(Boolean).join("\n")}
+function googleUrl(e,occ){const s=slot(e,occ),dates=s.allDay?compact(s.from)+"/"+compact(s.toExcl):compact(s.day)+"T"+s.start.replace(":","")+"00/"+compact(s.day)+"T"+s.end.replace(":","")+"00";
+  return"https://calendar.google.com/calendar/render?"+new URLSearchParams({action:"TEMPLATE",text:e.n,dates,details:descr(e).slice(0,900),location:place(e),ctz:"Europe/Paris"})}
+function outlookUrl(e,occ,base){const s=slot(e,occ),q=new URLSearchParams({path:"/calendar/action/compose",rru:"addevent",subject:e.n,body:descr(e).slice(0,900),location:place(e)});
+  if(s.allDay){q.set("startdt",s.from);q.set("enddt",s.toExcl);q.set("allday","true")}else{q.set("startdt",toUTC(s.day,s.start).toISOString());q.set("enddt",toUTC(s.day,s.end).toISOString())}
+  return base+"/calendar/0/deeplink/compose?"+q}
+function slug(t){return t.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,48)}
+function icsName(e,occ){const k=(e.r&&!occ.day)?compact(e.r[0]):compact(occ.day)+(occ.start?occ.start.replace(":",""):"");return"ics/"+slug(e.n)+"-"+k+".ics"}
+function icsEsc(t){return t.replace(/\\/g,"\\\\").replace(/;/g,"\;").replace(/,/g,"\\,").replace(/\n/g,"\\n")}
+function fold(line){const out=[];let cur="",n=0;for(const ch of line){const b=new TextEncoder().encode(ch).length;if(n+b>73){out.push(cur);cur=" ";n=1}cur+=ch;n+=b}out.push(cur);return out.join("\r\n")}
+function icsText(e,occ,now){const s=slot(e,occ),L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Sortir a Saint-Cloud//FR","CALSCALE:GREGORIAN","METHOD:PUBLISH","BEGIN:VEVENT","UID:"+icsName(e,occ).slice(4,-4)+"@sortir-saint-cloud","DTSTAMP:"+stamp(now)];
+  if(s.allDay)L.push("DTSTART;VALUE=DATE:"+compact(s.from),"DTEND;VALUE=DATE:"+compact(s.toExcl));else L.push("DTSTART:"+stamp(toUTC(s.day,s.start)),"DTEND:"+stamp(toUTC(s.day,s.end)));
+  L.push("SUMMARY:"+icsEsc(e.n),"LOCATION:"+icsEsc(place(e)),"DESCRIPTION:"+icsEsc(descr(e)));if(e.u)L.push("URL:"+e.u);L.push("END:VEVENT","END:VCALENDAR");return L.map(fold).join("\r\n")+"\r\n"}
+/*LOGIC-END*/
+const HOSTED=false;
+if(typeof document!=="undefined"){
+const WD=["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],MO=["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc."],MOL=["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const dparts=day=>{const d=new Date(day+"T00:00Z");return{wd:WD[d.getUTCDay()],d:d.getUTCDate(),m:d.getUTCMonth(),y:d.getUTCFullYear()}};
+const hfr=hm=>{const[h,m]=hm.split(":");return +h+" h"+(m==="00"?"":" "+m)};
+const nowParis=()=>{const p=Object.fromEntries(new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Paris",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).formatToParts(new Date()).map(x=>[x.type,x.value]));return{day:`${p.year}-${p.month}-${p.day}`,hm:`${p.hour}:${p.minute}`}};
+const occLabel=o=>{const p=dparts(o.day),base=`${p.wd} ${p.d===1?"1er":p.d} ${MO[p.m]}`;return o.allDay?base:`${base}, ${hfr(o.start)}${o.end?" – "+hfr(o.end):""}`};
+const upcoming=(e,now)=>{const L=occsOf(e);if(!L[0].day)return e.r[1]>=now.day?[{}]:[];return L.filter(o=>{if(o.day>now.day)return true;if(o.day<now.day)return false;if(o.allDay)return true;return(o.end||addMin(o.start,120))>now.hm})};
+const PERIODS=[["all","Tout"],["today","Aujourd’hui"],["tomorrow","Demain"],["we","Ce week-end"],["7","7 prochains jours"],["month","Ce mois-ci"],["next","Mois prochain"]];
+let period="all";
+const cats=["Toutes les catégories",...new Set(EVENTS.filter(e=>!e.m).map(e=>e.c))];
+document.getElementById("cat").innerHTML=cats.map((c,i)=>`<option value="${i?esc(c):""}">${esc(c)}</option>`).join("");
+const pEl=document.getElementById("periods");
+pEl.innerHTML=PERIODS.map(([k,l])=>`<button type="button" class="chip" data-p="${k}" aria-pressed="${k==="all"}">${l}</button>`).join("");
+pEl.addEventListener("click",ev=>{const b=ev.target.closest("[data-p]");if(!b)return;period=b.dataset.p;pEl.querySelectorAll("[data-p]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));render()});
+function bounds(now){const d=new Date(now.day+"T00:00Z"),dow=d.getUTCDay();
+  if(period==="today")return[now.day,now.day];
+  if(period==="tomorrow"){const t=addDays(now.day,1);return[t,t]}
+  if(period==="we"){if(dow===0)return[now.day,now.day];return[addDays(now.day,6-dow),addDays(now.day,7-dow)]}
+  if(period==="7")return[now.day,addDays(now.day,6)];
+  if(period==="month"){const e=new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth()+1,0));return[now.day,e.toISOString().slice(0,10)]}
+  if(period==="next"){const s=new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth()+1,1)),e=new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth()+2,0));return[s.toISOString().slice(0,10),e.toISOString().slice(0,10)]}
+  return null}
+const norm=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+function pick(){const now=nowParis(),b=bounds(now),q=norm(document.getElementById("q").value.trim()),cat=document.getElementById("cat").value,fr=document.getElementById("free").checked,mem=document.getElementById("members").checked,res=[];
+  EVENTS.forEach((e,i)=>{if(e.m&&!mem)return;if(cat&&e.c!==cat&&!(e.m&&mem&&cat==="Adhérents"))return;if(fr&&e.p[0]!=="f")return;
+    if(q&&!norm([e.n,e.l[0],e.l[1],e.de,e.c].join(" ")).includes(q))return;
+    const up=upcoming(e,now);if(!up.length)return;
+    if(!up[0].day){if(b&&(e.r[1]<b[0]||e.r[0]>b[1]))return;res.push({e,i,k:i+"_r",day:null,occs:[{}],others:[],key:e.r[0]<=now.day?"0":e.r[0]});return}
+    const days=[...new Set(up.map(o=>o.day))];
+    days.forEach(day=>{if(b&&(day<b[0]||day>b[1]))return;const occs=up.filter(o=>o.day===day);res.push({e,i,k:i+"_"+day,day,occs,others:days.filter(x=>x!==day),key:day+(occs[0].start||"")})})});
+  res.sort((a,b)=>a.key<b.key?-1:a.key>b.key?1:a.e.n.localeCompare(b.e.n,"fr"));return{res,now}}
+function dateBlock(x,now){const e=x.e;if(!x.day){const a=dparts(e.r[0]),z=dparts(e.r[1]);if(e.r[0]<=now.day)return`<div class="date span"><span class="wd">jusqu’au</span><span class="d">${z.d} ${MO[z.m]}</span></div>`;return`<div class="date span"><span class="wd">du ${a.d} ${MO[a.m]}</span><span class="d">au ${z.d} ${MO[z.m]}</span></div>`}
+  const p=dparts(x.day);return`<div class="date"><span class="wd">${p.wd}</span><span class="d">${p.d}</span><span class="m">${MO[p.m]}</span></div>`}
+function when(x){const o=x.occs;if(!x.day||o[0].allDay)return"";if(o.length>1||x.e.fi)return o.map(a=>hfr(a.start)).join(", ");return hfr(o[0].start)+(o[0].end?" – "+hfr(o[0].end):"")}
+function pill(e){const k=e.p[0];return k==="f"?`<span class="pill f">Gratuit</span>`:k==="p"?`<span class="pill p">${esc(e.p[1])}</span>`:`<span class="pill u">Tarif non précisé</span>`}
+function links(e,occ){return{g:googleUrl(e,occ),o:outlookUrl(e,occ,"https://outlook.live.com"),p:outlookUrl(e,occ,"https://outlook.office.com"),i:icsName(e,occ)}}
+function agendaBlock(x){const e=x.e,occs=x.occs,l=links(e,occs[0]),est=occs[0].start&&!occs[0].end;
+  const sel=occs.length>1?`<label class="fact" for="o${x.k}">${e.fi?"Séance":"Horaire"} à ajouter</label><select class="field" id="o${x.k}" data-occ="${x.k}">${occs.map((o,n)=>`<option value="${n}">${esc(occLabel(o))}</option>`).join("")}</select>`:"";
+  return`<div class="agenda"><strong>Ajouter à mon agenda</strong>${sel}<div class="btns" data-btns="${x.k}"><a class="btn" data-k="g" href="${esc(l.g)}" target="_blank" rel="noopener">Google</a><a class="btn" data-k="o" href="${esc(l.o)}" target="_blank" rel="noopener">Outlook</a><a class="btn" data-k="p" href="${esc(l.p)}" target="_blank" rel="noopener">Outlook pro</a>${HOSTED?`<a class="btn" data-k="i" href="${esc(l.i)}" target="_blank" rel="noopener">iPhone</a>`:""}</div>${HOSTED?"":`<p class="hint">Sur iPhone : passez par Google ou Outlook si ce compte est synchronisé avec votre téléphone.</p>`}<p class="hint" data-est="${x.k}"${est?"":" hidden"}>Heure de fin non communiquée : l’agenda réserve 2 h.</p></div>`}
+function otherDays(x){if(!x.others.length)return"";const lab=d=>{const p=dparts(d);return`${p.wd} ${p.d===1?"1er":p.d} ${MO[p.m]}`},shown=x.others.slice(0,6).map(lab).join(", "),rest=x.others.length-6;return`<p class="fact"><b>Autres dates :</b> ${esc(shown)}${rest>0?` et ${rest} autre${rest>1?"s":""}`:""}</p>`}
+function row(x,now){const e=x.e,placeTxt=[when(x),e.l[0]].filter(Boolean).join(" · ");
+  const srcs=e.s.join(", ");
+  return`<details class="ev"><summary>${dateBlock(x,now)}<div><p class="name">${esc(e.n)}</p><p class="meta">${esc(placeTxt)}</p></div><div class="tags">${pill(e)}${e.st?`<span class="pill w">${esc(e.st)}</span>`:""}</div></summary>
+  <div class="body"><p>${esc(e.de||"")}</p>
+  <p class="fact"><b>Lieu :</b> ${esc(place(e))}</p>
+  <p class="fact"><b>Tarif :</b> ${esc(e.p[0]==="u"?"non précisé par les sources":e.p[1])}</p>
+  ${e.re?`<p class="fact">${esc(e.re)}</p>`:""}
+  ${otherDays(x)}
+  ${e.note?`<p class="note">À vérifier : ${esc(e.note)}</p>`:""}
+  ${agendaBlock(x)}
+  <p class="src">Source : ${esc(srcs)}${e.u?` · <a href="${esc(e.u)}" target="_blank" rel="noopener">Page de l’événement</a>`:""}</p></div></details>`}
+function render(){const{res,now}=pick();const ongoing=res.filter(x=>x.key==="0"),rest=res.filter(x=>x.key!=="0"),out=[];
+  if(ongoing.length)out.push(`<section><h2>En ce moment</h2><div class="list">${ongoing.map(x=>row(x,now)).join("")}</div></section>`);
+  const groups=new Map();rest.forEach(x=>{const m=x.key.slice(0,7);(groups.get(m)||groups.set(m,[]).get(m)).push(x)});
+  groups.forEach((v,m)=>{const p=dparts(m+"-01");out.push(`<section><h2>${MOL[p.m][0].toUpperCase()+MOL[p.m].slice(1)} ${p.y}</h2><div class="list">${v.map(x=>row(x,now)).join("")}</div></section>`)});
+  document.getElementById("out").innerHTML=out.join("")||`<p class="empty">Aucun événement ne correspond. Essayez une autre période ou retirez un filtre.</p>`;
+  document.getElementById("count").textContent=res.length+(res.length>1?" événements":" événement")}
+document.getElementById("out").addEventListener("change",ev=>{const sel=ev.target.closest("[data-occ]");if(!sel)return;const k=sel.dataset.occ,x=pick().res.find(r=>r.k===k);if(!x)return;const occ=x.occs[+sel.value],l=links(x.e,occ);document.querySelectorAll(`[data-btns="${k}"] a`).forEach(a=>{a.href=l[a.dataset.k]});const h=document.querySelector(`[data-est="${k}"]`);if(h)h.hidden=!(occ.start&&!occ.end)});
+["q","cat","free","members"].forEach(id=>document.getElementById(id).addEventListener(id==="q"?"input":"change",()=>{if(id==="members"){const c=document.getElementById("cat"),on=document.getElementById("members").checked,has=[...c.options].some(o=>o.value==="Adhérents");if(on&&!has)c.add(new Option("Cours et activités d’adhérents","Adhérents"));if(!on&&has){if(c.value==="Adhérents")c.value="";[...c.options].find(o=>o.value==="Adhérents").remove()}}render()}));
+document.getElementById("sub").textContent="Cinéma, spectacles, musée, marchés, ateliers et vie locale, jour par jour.";
+render();
+if(HOSTED){
+  if("serviceWorker" in navigator)window.addEventListener("load",()=>{navigator.serviceWorker.register("./sw.js").catch(()=>{})});
+  const standalone=matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
+  let hiddenByUser=false;try{hiddenByUser=localStorage.getItem("installHidden")==="1"}catch(_){}
+  if(!standalone&&!hiddenByUser){
+    const box=document.getElementById("install"),txt=document.getElementById("installText"),btn=document.getElementById("installBtn");
+    const ios=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+    txt.textContent=ios?"Installez l’application : dans Safari, touchez Partager, puis « Sur l’écran d’accueil ».":"Installez l’application : dans le menu du navigateur, choisissez « Installer l’application » ou « Ajouter à l’écran d’accueil ».";
+    box.hidden=false;
+    let prompt=null;
+    window.addEventListener("beforeinstallprompt",ev=>{ev.preventDefault();prompt=ev;txt.textContent="Ajoutez Sortir à Saint-Cloud à votre écran d’accueil.";btn.hidden=false});
+    btn.addEventListener("click",async()=>{if(!prompt)return;prompt.prompt();await prompt.userChoice;prompt=null;box.hidden=true});
+    window.addEventListener("appinstalled",()=>{box.hidden=true});
+    document.getElementById("installHide").addEventListener("click",()=>{box.hidden=true;try{localStorage.setItem("installHidden","1")}catch(_){}});
+  }
+}
+}
+</script>

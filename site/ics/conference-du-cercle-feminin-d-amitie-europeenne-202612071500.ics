@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:conference-du-cercle-feminin-d-amitie-europeenne-202612071500@sortir-
+ saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261207T140000Z
+DTEND:20261207T160000Z
+SUMMARY:Conférence du Cercle féminin d’amitié européenne
+LOCATION:Le Carré\, 3 bis\, rue d’Orléans\, 92210 Saint-Cloud
+DESCRIPTION:Rencontre-conférence mensuelle. Sujet à venir.\nRenseigneme
+ nts : cfae.saintcloud@gmail.com.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:le-probleme-lapin-cartographie-7-202703162030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270316T193000Z
+DTEND:20270316T204500Z
+SUMMARY:Le Problème Lapin – Cartographie 7
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Comédie de Frédéric Ferrer sur les lapins et le déclin du
+  vivant. 1 h 15\, à partir de 12 ans. Salle Lino Ventura.\nCatégorie C
+ .\nTarif : De 11 à 26 €\nhttps://www.3pierrots.fr/spectacles/le-probl
+ eme-lapin-cartographie-7
+URL:https://www.3pierrots.fr/spectacles/le-probleme-lapin-cartographie-7
+END:VEVENT
+END:VCALENDAR

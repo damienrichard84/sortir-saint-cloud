@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:les-bibliothecaires-racontent-202612021600@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261202T150000Z
+DTEND:20261202T160000Z
+SUMMARY:Les bibliothécaires racontent
+LOCATION:Médiathèque\, Espace jeunesse\, 60\, rue Gounod\, 92210 Saint-
+ Cloud
+DESCRIPTION:Tous les mercredis : à 16 h pour les 5-10 ans\, à 16 h 30 p
+ our les 3-4 ans (enfants seuls).\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

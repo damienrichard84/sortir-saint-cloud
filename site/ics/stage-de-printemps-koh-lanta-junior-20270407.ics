@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:stage-de-printemps-koh-lanta-junior-20270407@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART;VALUE=DATE:20270407
+DTEND;VALUE=DATE:20270408
+SUMMARY:Stage de printemps : Koh Lanta Junior
+LOCATION:Gymnase Fouilleuse\, 92210 Saint-Cloud
+DESCRIPTION:École des Sports\, 6-8 ans. 20 places.\nHors Saint-Cloud : 3
+ 32 €. Inscription en ligne sur l’Espace Famille. Renseignements au 0
+ 1 47 71 54 33. Inscription à partir du 22 février à 10 h.\nTarif : De
+  63 à 208 €
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:promenade-dans-le-domaine-national-avf-202611181000@sortir-saint-clou
+ d
+DTSTAMP:20261104T150000Z
+DTSTART:20261118T090000Z
+DTEND:20261118T103000Z
+SUMMARY:Promenade dans le Domaine national AVF
+LOCATION:Domaine national de Saint-Cloud\, 1\, avenue de la Grille-d’Ho
+ nneur
+DESCRIPTION:Chaque mercredi. Certificat médical annuel obligatoire.\nAdh
+ ésion AVF obligatoire. Renseignements au 01 47 71 53 68.\nTarif : Gratu
+ it
+END:VEVENT
+END:VCALENDAR

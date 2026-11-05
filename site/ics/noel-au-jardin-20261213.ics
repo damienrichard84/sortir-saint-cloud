@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:noel-au-jardin-20261213@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Noël au jardin
+LOCATION:Jardin des Tourneroches\, 92210 Saint-Cloud
+DESCRIPTION:Maison du Père Noël\, illumination du grand sapin et manèg
+ es.\nRenseignements sur saintcloud.fr.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

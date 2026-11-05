@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dans-les-coulisses-du-musee-20261015@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20270222
+SUMMARY:Dans les coulisses du musée
+LOCATION:Musée des Avelines\, 60\, rue Gounod\, 92210 Saint-Cloud
+DESCRIPTION:Les métiers et les mystères d’un musée : restauration\, 
+ récolement\, entrée des œuvres dans la collection.\nOuvert du mercred
+ i au samedi de 12 h à 18 h\, le dimanche de 14 h à 18 h. Fermé les jo
+ urs fériés et de Noël au 1er janvier.\nTarif : Entrée libre\nhttps:/
+ /www.musee-saintcloud.fr/agenda/dans-les-coulisses-du-musee
+URL:https://www.musee-saintcloud.fr/agenda/dans-les-coulisses-du-musee
+END:VEVENT
+END:VCALENDAR

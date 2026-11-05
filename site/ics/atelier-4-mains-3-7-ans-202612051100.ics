@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:atelier-4-mains-3-7-ans-202612051100@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261205T100000Z
+DTEND:20261205T113000Z
+SUMMARY:Atelier 4 mains 3-7 ans
+LOCATION:Le Carré\, 3 bis\, rue d’Orléans\, 92210 Saint-Cloud
+DESCRIPTION:Avec Betty.\nTarif et inscription auprès de l’ECLA\, au 01
+  46 02 34 12.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

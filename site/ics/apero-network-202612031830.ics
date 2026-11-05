@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:apero-network-202612031830@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261203T173000Z
+DTEND:20261203T193000Z
+SUMMARY:Apéro Network
+LOCATION:Lieu à confirmer\, 92210 Saint-Cloud
+DESCRIPTION:Soirée conviviale des entrepreneurs et acteurs économiques 
+ de Saint-Cloud.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:rencontre-avec-lucie-castel-202611071530@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261107T143000Z
+DTEND:20261107T163000Z
+SUMMARY:Rencontre avec Lucie Castel
+LOCATION:Librairie Les Cyclades\, Saint-Cloud
+DESCRIPTION:Rencontre autour de la saga Le Pacte des Héritières.\nTarif
+  : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

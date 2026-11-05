@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:vente-de-jouets-et-d-objets-de-puericulture-202611141400@sortir-saint
+ -cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261114T130000Z
+DTEND:20261114T173000Z
+SUMMARY:Vente de jouets et d’objets de puériculture
+LOCATION:Salles des Avelines\, 60\, rue Gounod\, 92210 Saint-Cloud
+DESCRIPTION:Braderie de l’association Les Rendez-vous de Saint-Cloud. D
+ épôts sans rendez-vous le vendredi 13 novembre de 14 h à 18 h 30 et l
+ e samedi 14 de 9 h à 11 h.\nRenseignements au 07 81 61 18 70.\nTarif : 
+ Tarif non précisé
+END:VEVENT
+END:VCALENDAR

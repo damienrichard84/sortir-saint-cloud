@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eveil-theatral-3-6-ans-202612121130@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261212T103000Z
+DTEND:20261212T113000Z
+SUMMARY:Éveil théâtral 3-6 ans
+LOCATION:Écoles des Coteaux\, Saint-Exupéry ou Montretout\, 92210 Saint
+ -Cloud
+DESCRIPTION:Le Cours de la Scène. Théâtre aussi pour les 7-12 ans du m
+ ardi au samedi et les 13-17 ans\, horaires auprès de l’association.\n
+ Renseignements au 07 72 22 84 99 ou 06 09 16 16 06.\nTarif : Tarif non p
+ récisé
+END:VEVENT
+END:VCALENDAR

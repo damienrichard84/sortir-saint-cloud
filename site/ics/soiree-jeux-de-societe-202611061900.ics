@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:soiree-jeux-de-societe-202611061900@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261106T180000Z
+DTEND:20261106T200000Z
+SUMMARY:Soirée jeux de société
+LOCATION:Le Carré\, So Art Café\, 3 bis\, rue d’Orléans\, 92210 Sain
+ t-Cloud
+DESCRIPTION:Dès 10 ans (moins de 13 ans accompagnés). Buffet partagé :
+  apportez de quoi grignoter.\nRéservation conseillée sur ecla.net.\nTa
+ rif : Entrée libre
+END:VEVENT
+END:VCALENDAR

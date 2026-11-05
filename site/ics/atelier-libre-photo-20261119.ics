@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:atelier-libre-photo-20261119@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Atelier libre photo
+LOCATION:Le Carré\, 3 bis\, rue d’Orléans\, 92210 Saint-Cloud
+DESCRIPTION:Le 1er et le 3e jeudi du mois\, hors vacances scolaires. Hora
+ ire auprès de l’ECLA.\nTarif et inscription auprès de l’ECLA\, au 
+ 01 46 02 34 12.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

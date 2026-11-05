@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:atelier-se-connaitre-soi-meme-pour-vendre-20261116@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Atelier « Se connaître soi-même pour vendre »
+LOCATION:Espace Emploi\, 4\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Premier atelier du cycle Saint-Cloud Entreprises pour les ent
+ repreneurs. Horaire à venir sur saintcloud.fr.\nTarif : Tarif non préc
+ isé
+END:VEVENT
+END:VCALENDAR

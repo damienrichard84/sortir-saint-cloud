@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:icones-20261209@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261219
+SUMMARY:Icônes
+LOCATION:Le Carré\, 3 bis\, rue d’Orléans\, 92210 Saint-Cloud
+DESCRIPTION:L’icône\, élément central de la spiritualité des chrét
+ iens d’Orient.\nTarif : Entrée libre
+END:VEVENT
+END:VCALENDAR

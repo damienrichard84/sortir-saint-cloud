@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:concert-du-nouvel-an-du-conservatoire-202701101100@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270110T100000Z
+DTEND:20270110T120000Z
+SUMMARY:Concert du Nouvel An du conservatoire
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:L’harmonie\, le chœur et l’orchestre symphonique du cons
+ ervatoire de Saint-Cloud.\nRenseignements sur conservatoiresaintcloud.co
+ m.\nTarif : Entrée libre dans la limite des places disponibles
+END:VEVENT
+END:VCALENDAR

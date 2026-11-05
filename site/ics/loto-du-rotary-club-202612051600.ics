@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:loto-du-rotary-club-202612051600@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261205T150000Z
+DTEND:20261205T170000Z
+SUMMARY:Loto du Rotary Club
+LOCATION:Le Carré\, 3 bis\, rue d’Orléans\, 92210 Saint-Cloud
+DESCRIPTION:Au profit de l’Institut Curie et de la recherche contre le 
+ cancer.\nRenseignements sur rotarysaintcloud.fr.\nTarif : Tarif non pré
+ cisé
+END:VEVENT
+END:VCALENDAR

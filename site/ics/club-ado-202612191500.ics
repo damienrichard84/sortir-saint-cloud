@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:club-ado-202612191500@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261219T140000Z
+DTEND:20261219T160000Z
+SUMMARY:Club Ado
+LOCATION:Médiathèque\, Espace jeunesse\, 60\, rue Gounod\, 92210 Saint-
+ Cloud
+DESCRIPTION:Échanges sur les livres\, BD\, mangas\, musiques et jeux\, 
+ à partir du collège. Lancement du Bubble Prix en novembre.\nTarif : En
+ trée libre
+END:VEVENT
+END:VCALENDAR

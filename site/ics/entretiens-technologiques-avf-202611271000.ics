@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:entretiens-technologiques-avf-202611271000@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261127T090000Z
+DTEND:20261127T110000Z
+SUMMARY:Entretiens technologiques AVF
+LOCATION:Accueil AVF\, hôtel de ville\, 13\, place Charles-de-Gaulle\, 9
+ 2210 Saint-Cloud
+DESCRIPTION:Questions sur l’informatique ou les téléphones. 20 € le
+  trimestre.\nAdhésion AVF obligatoire. Renseignements au 01 47 71 53 68
+ .\nTarif : 5 € la séance
+END:VEVENT
+END:VCALENDAR

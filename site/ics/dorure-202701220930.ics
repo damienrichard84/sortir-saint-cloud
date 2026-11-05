@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dorure-202701220930@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270122T083000Z
+DTEND:20270122T113000Z
+SUMMARY:Dorure
+LOCATION:Le Carré\, 3 bis\, rue d’Orléans\, 92210 Saint-Cloud
+DESCRIPTION:Atelier non hebdomadaire de l’ECLA.\nTarif et inscription a
+ uprès de l’ECLA\, au 01 46 02 34 12.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

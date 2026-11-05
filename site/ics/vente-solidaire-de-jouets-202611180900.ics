@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:vente-solidaire-de-jouets-202611180900@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261118T080000Z
+DTEND:20261118T170000Z
+SUMMARY:Vente solidaire de jouets
+LOCATION:Maison de l’Amitié\, 18\, rue des Écoles\, 92210 Saint-Cloud
+DESCRIPTION:Jouets de seconde main pour tous les âges.\nRenseignements a
+ u 01 46 02 25 69.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

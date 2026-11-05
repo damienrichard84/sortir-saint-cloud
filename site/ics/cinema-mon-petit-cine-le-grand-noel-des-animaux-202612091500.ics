@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-mon-petit-cine-le-grand-noel-des-animaux-202612091500@sortir-s
+ aint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261209T140000Z
+DTEND:20261209T151200Z
+SUMMARY:Cinéma : Mon Petit Ciné : Le grand Noël des animaux
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Dès 3 ans\, 1 h 12. Le traîneau du père Noël doit être s
+ auvé. Séance suivie d’un atelier créatif.\nMoins de 15 ans : 5 €.
+  Atelier sur inscription : c.mihura@saintcloud.fr.\nTarif : 8 €
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-mon-petit-cine-ernest-et-celestine-le-voy-202701061500@sortir-
+ saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270106T140000Z
+DTEND:20270106T152000Z
+SUMMARY:Cinéma : Mon Petit Ciné : Ernest et Célestine\, le voyage en C
+ harabie
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Dès 3 ans\, 1 h 20. Séance suivie d’un atelier créatif.\
+ nMoins de 15 ans : 5 €. Atelier sur inscription : c.mihura@saintcloud.
+ fr.\nTarif : 8 €
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:marche-de-noel-de-l-ecole-allemande-202611281400@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261128T130000Z
+DTEND:20261128T170000Z
+SUMMARY:Marché de Noël de l’école allemande
+LOCATION:École allemande internationale de Paris\, 12\, rue Lelégard\, 
+ 92210 Saint-Cloud
+DESCRIPTION:Produits artisanaux et couronnes de l’Avent.\nRenseignement
+ s sur idsp.fr.\nTarif : Entrée libre
+END:VEVENT
+END:VCALENDAR

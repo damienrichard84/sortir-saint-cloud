@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:argent-et-couleurs-20261118@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261204
+SUMMARY:Argent et couleurs
+LOCATION:Le Carré\, 3 bis\, rue d’Orléans\, 92210 Saint-Cloud
+DESCRIPTION:Les artistes japonaises Kimiko Okubo et Miho Shibui font se r
+ encontrer le métal et la peinture. Vernissage le vendredi 20 novembre 
+ à 18 h.\nTarif : Entrée libre
+END:VEVENT
+END:VCALENDAR

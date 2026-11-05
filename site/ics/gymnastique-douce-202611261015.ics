@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:gymnastique-douce-202611261015@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261126T091500Z
+DTEND:20261126T101500Z
+SUMMARY:Gymnastique douce
+LOCATION:Espace d’animation des Coteaux\, Place Santos-Dumont\, 92210 S
+ aint-Cloud
+DESCRIPTION:Sur inscription.\nRéservé aux adhérents (60 ans et plus). 
+ Renseignements au 01 46 89 64 86.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

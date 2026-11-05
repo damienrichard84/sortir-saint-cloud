@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:les-gardiens-de-la-planete-20261030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261123
+SUMMARY:Les gardiens de la planète
+LOCATION:Dans le territoire Paris Ouest La Défense\, 92210 Saint-Cloud
+DESCRIPTION:Challenge « Zéro Déchets » de POLD\, 3e année.\nRenseign
+ ements sur parisouestladefense.fr.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

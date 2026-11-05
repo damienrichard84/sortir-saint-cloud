@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:peinture-sur-porcelaine-a-l-ecla-202701141930@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270114T183000Z
+DTEND:20270114T203000Z
+SUMMARY:Peinture sur porcelaine à l’ECLA
+LOCATION:Le Carré\, 3 bis\, rue d’Orléans\, 92210 Saint-Cloud
+DESCRIPTION:Atelier non hebdomadaire de l’ECLA.\nTarif et inscription a
+ uprès de l’ECLA\, au 01 46 02 34 12.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

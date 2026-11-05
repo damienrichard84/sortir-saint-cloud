@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-seance-neon-202611071830@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261107T173000Z
+DTEND:20261107T195100Z
+SUMMARY:Cinéma : Séance NÉON
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Séance organisée par des jeunes et ouverte à tous. Le 7 no
+ vembre : L’Échange de Clint Eastwood en VF\, suivi d’une rencontre 
+ avec Françoise Cadol\, voix française d’Angelina Jolie. Films des s
+ éances suivantes à venir.\nRéservation sur cinema3pierrots.fr.\nTarif
+  : 6\,50 €\nhttps://www.3pierrots.fr/spectacles/lechange
+URL:https://www.3pierrots.fr/spectacles/lechange
+END:VEVENT
+END:VCALENDAR

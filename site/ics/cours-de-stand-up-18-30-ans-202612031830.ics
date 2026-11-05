@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cours-de-stand-up-18-30-ans-202612031830@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261203T173000Z
+DTEND:20261203T190000Z
+SUMMARY:Cours de stand-up 18-30 ans
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Chaque jeudi\, avec Adrien de Poncins et Diego Boisseau.\nTar
+ if réduit : 315 €. Inscriptions sur ecla.net.\nTarif : 346 € l’an
+ née
+END:VEVENT
+END:VCALENDAR

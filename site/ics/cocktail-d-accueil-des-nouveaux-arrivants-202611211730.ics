@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cocktail-d-accueil-des-nouveaux-arrivants-202611211730@sortir-saint-c
+ loud
+DTSTAMP:20261104T150000Z
+DTSTART:20261121T163000Z
+DTEND:20261121T183000Z
+SUMMARY:Cocktail d’accueil des nouveaux arrivants
+LOCATION:Accueil AVF\, hôtel de ville\, 13\, place Charles-de-Gaulle\, 9
+ 2210 Saint-Cloud
+DESCRIPTION:En présence du Maire\, précédé d’une visite de la ville
+  en car pour les 40 premiers inscrits.\nInscription obligatoire : avf.sa
+ intcloud@orange.fr.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

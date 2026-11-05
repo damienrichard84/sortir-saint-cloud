@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bruxelles-1900-par-sandrine-faucher-202611171415@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261117T131500Z
+DTEND:20261117T151500Z
+SUMMARY:Bruxelles 1900\, par Sandrine Faucher
+LOCATION:Le Carré\, 3 bis\, rue d’Orléans\, 92210 Saint-Cloud
+DESCRIPTION:Conférences Arts et Loisirs.\n4 € étudiant\, 5 € adhér
+ ent\, 10 € non-adhérent. Renseignements au 06 41 59 86 31.\nTarif : 4
+ \, 5 ou 10 €
+END:VEVENT
+END:VCALENDAR

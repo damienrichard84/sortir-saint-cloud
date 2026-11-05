@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:open-zik-la-scene-ouverte-de-l-ecla-202611202000@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261120T190000Z
+DTEND:20261120T210000Z
+SUMMARY:Open Zik\, la scène ouverte de l’ECLA
+LOCATION:Le Carré\, 3 bis\, rue d’Orléans\, 92210 Saint-Cloud
+DESCRIPTION:Salle E. Bond. Trois groupes : Kernel Panic (rock funk)\, La 
+ Siana (pop électro) et Sequel (indie pop). Bar sur place.\nRéservation
+  via HelloAsso\, depuis ecla.net.\nTarif : Participation libre\nhttps://
+ www.ecla.net/concert-open-zik-vendredi-20-novembre-2026/
+URL:https://www.ecla.net/concert-open-zik-vendredi-20-novembre-2026/
+END:VEVENT
+END:VCALENDAR

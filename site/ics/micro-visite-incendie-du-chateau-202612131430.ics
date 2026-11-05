@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:micro-visite-incendie-du-chateau-202612131430@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261213T133000Z
+DTEND:20261213T135000Z
+SUMMARY:Micro-visite : incendie du château
+LOCATION:Musée historique du Domaine national\, Domaine national de Sain
+ t-Cloud
+DESCRIPTION:Vingt minutes autour d’une lithographie de l’incendie du 
+ château\, d’après Léon Sabatier.\nTarif : Gratuit
+END:VEVENT
+END:VCALENDAR

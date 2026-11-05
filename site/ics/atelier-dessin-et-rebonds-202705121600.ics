@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:atelier-dessin-et-rebonds-202705121600@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270512T140000Z
+DTEND:20270512T153000Z
+SUMMARY:Atelier Dessin et rebonds
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Dès 3 ans\, 1 h 30\, autour d’Immobile & Rebondi #2.\nRés
+ ervé aux spectateurs ayant un billet pour le spectacle associé. Rensei
+ gnements sur 3pierrots.fr.\nTarif : 5 €
+END:VEVENT
+END:VCALENDAR

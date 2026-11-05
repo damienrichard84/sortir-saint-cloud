@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:l-affaire-rosalind-franklin-202701282030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270128T193000Z
+DTEND:20270128T204000Z
+SUMMARY:L’Affaire Rosalind Franklin
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Comment les recherches de Rosalind Franklin sur l’ADN ont 
+ été utilisées sans son accord. 1 h 10\, à partir de 12 ans. Salle Li
+ no Ventura.\nCatégorie C.\nTarif : De 11 à 26 €\nhttps://www.3pierro
+ ts.fr/spectacles/laffaire-rosalind-franklin
+URL:https://www.3pierrots.fr/spectacles/laffaire-rosalind-franklin
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:journee-d-hommage-aux-morts-de-la-guerre-d-alger-202612051000@sortir-
+ saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261205T090000Z
+DTEND:20261205T100000Z
+SUMMARY:Journée d’hommage aux morts de la guerre d’Algérie
+LOCATION:Cimetière\, 114\, avenue du Maréchal-Foch\, 92210 Saint-Cloud
+DESCRIPTION:Hommage aux morts pour la France pendant la guerre d’Algér
+ ie et les combats du Maroc et de la Tunisie.\nTarif : Cérémonie publiq
+ ue
+END:VEVENT
+END:VCALENDAR

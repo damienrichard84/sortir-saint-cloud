@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:au-c-ur-de-la-matiere-202701171600@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270117T150000Z
+DTEND:20270117T160000Z
+SUMMARY:Au cœur de la matière
+LOCATION:Musée des Avelines\, 60\, rue Gounod\, 92210 Saint-Cloud
+DESCRIPTION:Philippe Walter\, chercheur au CNRS : retracer l’histoire d
+ es œuvres par l’analyse de leurs matériaux\, des pigments préhistor
+ iques à Léonard de Vinci.\nRéservation au 01 46 02 67 18.\nTarif : Gr
+ atuit\nhttps://www.musee-saintcloud.fr/agenda/au-coeur-de-la-matiere
+URL:https://www.musee-saintcloud.fr/agenda/au-coeur-de-la-matiere
+END:VEVENT
+END:VCALENDAR

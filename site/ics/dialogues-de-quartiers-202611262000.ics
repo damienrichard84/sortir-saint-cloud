@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dialogues-de-quartiers-202611262000@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261126T190000Z
+DTEND:20261126T210000Z
+SUMMARY:Dialogues de quartiers
+LOCATION:En ligne
+DESCRIPTION:Échange avec le Maire et les délégués. 5 nov. : Pasteur/M
+ agenta et Montretout/Coutureau. 24 nov. : Hippodrome/Fouilleuse et Val d
+ ’or. 26 nov. : Centre/Village et Coteaux/Bords-de-Seine.\nQuestions à
+  dialogues@saintcloud.fr.\nTarif : Gratuit\, sur saintcloud.fr\nhttps://
+ www.saintcloud.fr/actualite/dialogues-de-quartiers-3
+URL:https://www.saintcloud.fr/actualite/dialogues-de-quartiers-3
+END:VEVENT
+END:VCALENDAR

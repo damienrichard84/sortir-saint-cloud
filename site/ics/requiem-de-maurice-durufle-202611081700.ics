@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:requiem-de-maurice-durufle-202611081700@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261108T160000Z
+DTEND:20261108T180000Z
+SUMMARY:Requiem de Maurice Duruflé
+LOCATION:Église Saint-Clodoald\, Saint-Cloud
+DESCRIPTION:Les Concerts de Saint-Cloud.\nTarif : Gratuit\nhttps://www.sa
+ intcloud.fr/agenda/requiem-de-maurice-durufle
+URL:https://www.saintcloud.fr/agenda/requiem-de-maurice-durufle
+END:VEVENT
+END:VCALENDAR

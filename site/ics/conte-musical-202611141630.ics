@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:conte-musical-202611141630@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261114T153000Z
+DTEND:20261114T163000Z
+SUMMARY:Conte musical
+LOCATION:Médiathèque\, Espace musique\, 60\, rue Gounod\, 92210 Saint-C
+ loud
+DESCRIPTION:Sylvestre Soleil raconte une légende aborigène et les origi
+ nes du didgeridoo. Pour les enfants à partir de 6 ans.\nInscription sur
+  place ou au 01 46 02 50 08.\nTarif : Tarif non précisé\nhttps://www.s
+ aintcloud.fr/agenda/conte-musical
+URL:https://www.saintcloud.fr/agenda/conte-musical
+END:VEVENT
+END:VCALENDAR

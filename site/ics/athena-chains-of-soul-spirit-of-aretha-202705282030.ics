@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:athena-chains-of-soul-spirit-of-aretha-202705282030@sortir-saint-clou
+ d
+DTSTAMP:20261104T150000Z
+DTSTART:20270528T183000Z
+DTEND:20270528T195000Z
+SUMMARY:Athéna & Chains of Soul – Spirit of Aretha
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Hommage moderne à Aretha Franklin. 1 h 20. Salle Lino Ventur
+ a.\nCatégorie B.\nTarif : De 13 à 30 €\nhttps://www.3pierrots.fr/spe
+ ctacles/athena-chains-soul-spirit-aretha
+URL:https://www.3pierrots.fr/spectacles/athena-chains-soul-spirit-aretha
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:stage-d-ete-savoir-rouler-et-multisports-20270706@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART;VALUE=DATE:20270706
+DTEND;VALUE=DATE:20270707
+SUMMARY:Stage d’été : savoir rouler et multisports
+LOCATION:Gymnase du Centre\, 92210 Saint-Cloud
+DESCRIPTION:École des Sports\, 6-8 ans. 24 places.\nHors Saint-Cloud : 3
+ 32 €. Inscription en ligne sur l’Espace Famille. Renseignements au 0
+ 1 47 71 54 33. Inscription à partir du 19 avril à 10 h.\nTarif : De 63
+  à 208 €
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:peu-importe-202611122030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261112T193000Z
+DTEND:20261112T205000Z
+SUMMARY:Peu importe
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:De Marius von Mayenburg\, 1 h 20\, Studio Bertrand Tavernier.
+  Simone et Erik\, un couple qui se débat avec les fissures du quotidien
+ .\nCarte Passion de 10 à 18 €. Le magazine de novembre annonce la soi
+ rée complète.\nTarif : De 11 à 26 €\nhttps://www.3pierrots.fr/spect
+ acles/peu-importe
+URL:https://www.3pierrots.fr/spectacles/peu-importe
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:images-animees-des-empereurs-202611211500@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261121T140000Z
+DTEND:20261121T160000Z
+SUMMARY:Images animées des empereurs
+LOCATION:Musée historique du Domaine national\, Domaine national de Sain
+ t-Cloud
+DESCRIPTION:Dès 6 ans : après une visite du musée\, anime les personna
+ ges historiques du Domaine en courtes saynètes.\nRéservation au 01 41 
+ 12 02 95 ou sur domaine-saint-cloud.fr.\nTarif : 6 € enfant\, 12 € a
+ dulte
+END:VEVENT
+END:VCALENDAR

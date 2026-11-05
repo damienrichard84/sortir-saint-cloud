@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:atelier-d-art-floral-202612161330@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261216T123000Z
+DTEND:20261216T150000Z
+SUMMARY:Atelier d’art floral
+LOCATION:Espace d’animation des Coteaux\, Place Santos-Dumont\, 92210 S
+ aint-Cloud
+DESCRIPTION:Sur inscription.\nRéservé aux adhérents (60 ans et plus). 
+ Renseignements au 01 46 89 64 86.\nTarif : 37 €
+END:VEVENT
+END:VCALENDAR

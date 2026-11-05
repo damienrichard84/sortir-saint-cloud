@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:visite-commentee-du-musee-historique-202611251430@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261125T133000Z
+DTEND:20261125T150000Z
+SUMMARY:Visite commentée du musée historique
+LOCATION:Musée historique du Domaine national\, Domaine national de Sain
+ t-Cloud
+DESCRIPTION:Une heure trente dans le musée historique du Domaine.\nRése
+ rvation au 01 41 12 02 95 ou sur domaine-saint-cloud.fr.\nTarif : De 7\,
+ 50 à 9 €
+END:VEVENT
+END:VCALENDAR

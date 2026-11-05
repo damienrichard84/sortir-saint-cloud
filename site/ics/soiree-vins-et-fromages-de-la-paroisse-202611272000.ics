@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:soiree-vins-et-fromages-de-la-paroisse-202611272000@sortir-saint-clou
+ d
+DTSTAMP:20261104T150000Z
+DTSTART:20261127T190000Z
+DTEND:20261127T210000Z
+SUMMARY:Soirée vins et fromages de la paroisse
+LOCATION:Crypte de l’église Stella Matutina\, 68\, avenue du Maréchal
+ -Foch\, 92210 Saint-Cloud
+DESCRIPTION:Soirée conviviale avec vente aux enchères de vins.\nRenseig
+ nements sur paroissestcloud.fr.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

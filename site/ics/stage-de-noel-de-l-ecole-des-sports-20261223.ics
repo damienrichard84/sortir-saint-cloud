@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:stage-de-noel-de-l-ecole-des-sports-20261223@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
+SUMMARY:Stage de Noël de l’École des Sports
+LOCATION:Gymnase du Centre\, 92210 Saint-Cloud
+DESCRIPTION:Jeux de raquettes et sports collectifs pour les 6-12 ans. 20 
+ places.\nHors Saint-Cloud : 332 €. Inscription en ligne sur l’Espace
+  Famille. Renseignements au 01 47 71 54 33.\nTarif : De 63 à 208 €\nh
+ ttps://www.saintcloud.fr/actualite/stage-de-noel-lecole-des-sports
+URL:https://www.saintcloud.fr/actualite/stage-de-noel-lecole-des-sports
+END:VEVENT
+END:VCALENDAR

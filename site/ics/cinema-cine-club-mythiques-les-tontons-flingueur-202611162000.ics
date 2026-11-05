@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-cine-club-mythiques-les-tontons-flingueur-202611162000@sortir-
+ saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261116T190000Z
+DTEND:20261116T204500Z
+SUMMARY:Cinéma : Ciné-club Mythiques : Les Tontons flingueurs
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:De Georges Lautner\, 1 h 45\, 1963. Suivi d’un débat anim
+ é par Thomas Fouet.\n8 € (moins de 15 ans : 5 €). Tarif cinéma à 
+ la séance.\nTarif : 8 €\nhttps://www.3pierrots.fr/spectacles/les-tont
+ ons-flingueurs
+URL:https://www.3pierrots.fr/spectacles/les-tontons-flingueurs
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bal-aux-heures-claires-202611061400@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261106T130000Z
+DTEND:20261106T150000Z
+SUMMARY:Bal aux Heures Claires
+LOCATION:Résidence Les Heures Claires\, 2\, rue Henri-Regnault\, 92210 S
+ aint-Cloud
+DESCRIPTION:Espace d’animation des Coteaux.\nRéservé aux adhérents (
+ 60 ans et plus). Renseignements au 01 46 89 64 86.\nTarif : Tarif non pr
+ écisé
+END:VEVENT
+END:VCALENDAR

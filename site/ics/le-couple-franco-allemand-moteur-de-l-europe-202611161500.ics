@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:le-couple-franco-allemand-moteur-de-l-europe-202611161500@sortir-sain
+ t-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261116T140000Z
+DTEND:20261116T160000Z
+SUMMARY:Le couple franco-allemand\, moteur de l’Europe ?
+LOCATION:Le Carré\, 3 bis\, rue d’Orléans\, 92210 Saint-Cloud
+DESCRIPTION:Conférence d’Hélène Miard-Delacroix\, proposée par le C
+ ercle féminin d’amitié européenne.\nRenseignements : cfae.saintclou
+ d@gmail.com.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

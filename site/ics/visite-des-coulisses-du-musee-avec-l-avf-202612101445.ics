@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:visite-des-coulisses-du-musee-avec-l-avf-202612101445@sortir-saint-cl
+ oud
+DTSTAMP:20261104T150000Z
+DTSTART:20261210T134500Z
+DTEND:20261210T154500Z
+SUMMARY:Visite des coulisses du musée avec l’AVF
+LOCATION:Musée des Avelines\, 60\, rue Gounod\, 92210 Saint-Cloud
+DESCRIPTION:Visite guidée suivie d’un thé ou café gourmand.\nAdhési
+ on AVF obligatoire. Renseignements au 01 47 71 53 68.\nTarif : 10 €
+END:VEVENT
+END:VCALENDAR

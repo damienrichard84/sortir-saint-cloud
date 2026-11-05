@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:salon-de-la-gastronomie-et-du-vin-202611151000@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261115T090000Z
+DTEND:20261115T170000Z
+SUMMARY:Salon de la gastronomie et du vin
+LOCATION:Le Carré\, 3 bis\, rue d’Orléans\, 92210 Saint-Cloud
+DESCRIPTION:Le Lions Club réunit vignerons\, producteurs et artisans. 16
+ e édition.\nRenseignements sur gastronomie-vin.fr.\nTarif : Entrée lib
+ re
+END:VEVENT
+END:VCALENDAR

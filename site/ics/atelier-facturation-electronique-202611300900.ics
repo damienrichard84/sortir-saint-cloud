@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:atelier-facturation-electronique-202611300900@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261130T080000Z
+DTEND:20261130T100000Z
+SUMMARY:Atelier facturation électronique
+LOCATION:Espace Emploi\, 4\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Pour les entrepreneurs\, avec Ghania Boukharouba\, experte-co
+ mptable.\nRenseignements au 01 46 02 46 58.\nTarif : Tarif non précisé
+ \nhttps://www.saintcloud.fr/agenda/atelier-facturation-electronique-0
+URL:https://www.saintcloud.fr/agenda/atelier-facturation-electronique-0
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-mon-petit-cine-les-fantastiques-livres-vo-202704211500@sortir-
+ saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270421T130000Z
+DTEND:20270421T135000Z
+SUMMARY:Cinéma : Mon Petit Ciné : Les fantastiques livres volants de M.
+  Morris Lessmore
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Dès 6 ans\, 50 min\, cinq courts-métrages. Séance suivie d
+ ’un atelier créatif.\nMoins de 15 ans : 5 €. Atelier sur inscriptio
+ n : c.mihura@saintcloud.fr.\nTarif : 8 €
+END:VEVENT
+END:VCALENDAR

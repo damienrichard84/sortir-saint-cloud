@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cours-de-stand-up-pour-adultes-202611182000@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261118T190000Z
+DTEND:20261118T203000Z
+SUMMARY:Cours de stand-up pour adultes
+LOCATION:Le Carré\, 3 bis\, rue d’Orléans\, 92210 Saint-Cloud
+DESCRIPTION:Chaque mercredi\, avec Vianney Henry.\nTarif réduit : 315 
+ €. Inscriptions sur ecla.net.\nTarif : 346 € l’année
+END:VEVENT
+END:VCALENDAR

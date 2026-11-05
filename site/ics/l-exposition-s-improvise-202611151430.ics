@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:l-exposition-s-improvise-202611151430@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261115T133000Z
+DTEND:20261115T143000Z
+SUMMARY:L’exposition s’improvise !
+LOCATION:Musée des Avelines\, 60\, rue Gounod\, 92210 Saint-Cloud
+DESCRIPTION:Visite décalée par des comédiens improvisateurs. Deux séa
+ nces d’une heure.\nRéservation au 01 46 02 67 18.\nTarif : Gratuit\nh
+ ttps://www.musee-saintcloud.fr/agenda/lexposition-simprovise
+URL:https://www.musee-saintcloud.fr/agenda/lexposition-simprovise
+END:VEVENT
+END:VCALENDAR

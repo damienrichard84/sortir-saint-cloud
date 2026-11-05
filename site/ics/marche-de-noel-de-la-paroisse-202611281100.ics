@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:marche-de-noel-de-la-paroisse-202611281100@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261128T100000Z
+DTEND:20261128T170000Z
+SUMMARY:Marché de Noël de la paroisse
+LOCATION:Crypte de l’église Stella Matutina\, 68\, avenue du Maréchal
+ -Foch\, 92210 Saint-Cloud
+DESCRIPTION:Animations pour enfants\, restauration et chorale de Noël.\n
+ Renseignements sur paroissestcloud.fr.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

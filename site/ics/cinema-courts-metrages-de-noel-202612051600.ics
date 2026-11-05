@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-courts-metrages-de-noel-202612051600@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261205T150000Z
+DTEND:20261205T170000Z
+SUMMARY:Cinéma : Courts-métrages de Noël
+LOCATION:Médiathèque\, Espace jeunesse\, 60\, rue Gounod\, 92210 Saint-
+ Cloud
+DESCRIPTION:À 10 h 30 pour les 3-5 ans\, à 16 h pour les plus de 6 ans.
+ \nTarif : Entrée libre dans la limite des places disponibles
+END:VEVENT
+END:VCALENDAR

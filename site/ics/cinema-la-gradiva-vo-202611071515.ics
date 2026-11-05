@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-la-gradiva-vo-202611071515@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261107T141500Z
+DTEND:20261107T164000Z
+SUMMARY:Cinéma : La Gradiva (VO)
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:De Marine Atlan\, 2 h 25. Des lycéens français en voyage sc
+ olaire à Pompéi.\n8 €. Moins de 15 ans : 5 €. Séances du dimanche
+  matin et du lundi après-midi : 5 €. Réservation sur cinema3pierrots
+ .fr.\nTarif : 8 €
+END:VEVENT
+END:VCALENDAR

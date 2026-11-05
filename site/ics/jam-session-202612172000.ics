@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:jam-session-202612172000@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261217T190000Z
+DTEND:20261217T210000Z
+SUMMARY:Jam session
+LOCATION:Le Carré\, 3 bis\, rue d’Orléans\, 92210 Saint-Cloud
+DESCRIPTION:Musiciens amateurs ou confirmés\, apportez vos instruments. 
+ Soirée ouverte à tous\, bar sur place.\nRenseignements sur ecla.net.\n
+ Tarif : Entrée libre
+END:VEVENT
+END:VCALENDAR

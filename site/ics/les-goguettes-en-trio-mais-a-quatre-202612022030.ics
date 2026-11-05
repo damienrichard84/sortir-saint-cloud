@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:les-goguettes-en-trio-mais-a-quatre-202612022030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261202T193000Z
+DTEND:20261202T213000Z
+SUMMARY:Les Goguettes (en trio mais à quatre)
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Quatre chanteurs traversent la variété française\, le rap 
+ et les tubes des années 1990\, avec fougue et humour.\nCarte Passion de
+  10 à 29 €.\nTarif : De 18 à 37 €\nhttps://www.3pierrots.fr/specta
+ cles/les-goguettes
+URL:https://www.3pierrots.fr/spectacles/les-goguettes
+END:VEVENT
+END:VCALENDAR

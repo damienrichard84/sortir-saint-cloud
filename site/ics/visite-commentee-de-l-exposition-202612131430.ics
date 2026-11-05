@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:visite-commentee-de-l-exposition-202612131430@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261213T133000Z
+DTEND:20261213T143000Z
+SUMMARY:Visite commentée de l’exposition
+LOCATION:Musée des Avelines\, 60\, rue Gounod\, 92210 Saint-Cloud
+DESCRIPTION:Une heure dans « Dans les coulisses du musée »\, chaque sa
+ medi et dimanche\, sauf le 15 novembre et le 31 janvier.\nRéservation a
+ u 01 46 02 67 18.\nTarif : 5\,50 €\nhttps://www.musee-saintcloud.fr/ag
+ enda/visites-commentees-de-lexposition-25
+URL:https://www.musee-saintcloud.fr/agenda/visites-commentees-de-lexposit
+ ion-25
+END:VEVENT
+END:VCALENDAR

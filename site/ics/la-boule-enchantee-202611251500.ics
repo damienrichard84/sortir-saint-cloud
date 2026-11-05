@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:la-boule-enchantee-202611251500@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261125T140000Z
+DTEND:20261125T144500Z
+SUMMARY:La Boule enchantée
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Théâtre d’ombres dès 4 ans : la marionnettiste dessine l
+ ’histoire dans le sable au rythme de la musique live.\nCarte Passion :
+  10 €.\nTarif : De 9 à 12 €\nhttps://www.3pierrots.fr/spectacles/la
+ -boule-enchantee
+URL:https://www.3pierrots.fr/spectacles/la-boule-enchantee
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:visite-devinettes-202611181030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261118T093000Z
+DTEND:20261118T103000Z
+SUMMARY:Visite-devinettes
+LOCATION:Musée des Avelines\, 60\, rue Gounod\, 92210 Saint-Cloud
+DESCRIPTION:Atelier parents-enfants dès 3 ans.\nRéservation au 01 46 02
+  67 18.\nTarif : 4\,50 €\nhttps://www.musee-saintcloud.fr/agenda/visit
+ e-devinettes-0
+URL:https://www.musee-saintcloud.fr/agenda/visite-devinettes-0
+END:VEVENT
+END:VCALENDAR

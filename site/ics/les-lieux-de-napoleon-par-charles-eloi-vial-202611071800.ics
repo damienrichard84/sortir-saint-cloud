@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:les-lieux-de-napoleon-par-charles-eloi-vial-202611071800@sortir-saint
+ -cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261107T170000Z
+DTEND:20261107T180000Z
+SUMMARY:Les lieux de Napoléon\, par Charles-Éloi Vial
+LOCATION:Médiathèque\, Espace musique\, 60\, rue Gounod\, 92210 Saint-C
+ loud
+DESCRIPTION:Par le docteur en histoire et conservateur des bibliothèques
+ . Public adulte. Vente-dédicace à l’issue de la conférence.\nTarif 
+ : Entrée libre dans la limite des places disponibles\nhttps://www.saint
+ cloud.fr/agenda/les-lieux-de-napoleon-par-charles-eloi-vial
+URL:https://www.saintcloud.fr/agenda/les-lieux-de-napoleon-par-charles-el
+ oi-vial
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:du-charbon-dans-les-veines-202704222030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270422T183000Z
+DTEND:20270422T195000Z
+SUMMARY:Du charbon dans les veines
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:1958\, une petite ville minière du Nord\, la Coupe du monde 
+ à la télévision. 1 h 20\, à partir de 11 ans. Salle Lino Ventura.\nC
+ atégorie A+.\nTarif : 45 €\nhttps://www.3pierrots.fr/spectacles/du-ch
+ arbon-dans-les-veines
+URL:https://www.3pierrots.fr/spectacles/du-charbon-dans-les-veines
+END:VEVENT
+END:VCALENDAR

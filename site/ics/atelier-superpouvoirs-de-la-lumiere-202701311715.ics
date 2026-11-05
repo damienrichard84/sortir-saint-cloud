@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:atelier-superpouvoirs-de-la-lumiere-202701311715@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270131T161500Z
+DTEND:20270131T174500Z
+SUMMARY:Atelier Superpouvoirs de la lumière
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Dès 5 ans\, 1 h 30\, avec les Savants fous\, autour de Cosmi
+ x 2.0.\nRéservé aux spectateurs ayant un billet pour le spectacle asso
+ cié. Renseignements sur 3pierrots.fr.\nTarif : 5 €
+END:VEVENT
+END:VCALENDAR

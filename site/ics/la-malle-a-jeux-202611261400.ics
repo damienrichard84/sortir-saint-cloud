@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:la-malle-a-jeux-202611261400@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261126T130000Z
+DTEND:20261126T170000Z
+SUMMARY:La Malle à jeux
+LOCATION:Médiathèque\, Espace jeunesse\, 60\, rue Gounod\, 92210 Saint-
+ Cloud
+DESCRIPTION:Chaque jeudi et vendredi\, une sélection de jeux de sociét
+ é pour petits et grands. Public familial. Prêt sur place aux inscrits 
+ de la médiathèque. Fermé les jours fériés.\nTarif : Tarif non préc
+ isé
+END:VEVENT
+END:VCALENDAR

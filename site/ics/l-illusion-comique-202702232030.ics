@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:l-illusion-comique-202702232030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270223T193000Z
+DTEND:20270223T210000Z
+SUMMARY:L’Illusion comique
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Théâtre classique : un père autoritaire traque son fils en
+  fuite. 1 h 30. Salle Lino Ventura.\nCatégorie B.\nTarif : De 13 à 30 
+ €\nhttps://www.3pierrots.fr/spectacles/lillusion-comique
+URL:https://www.3pierrots.fr/spectacles/lillusion-comique
+END:VEVENT
+END:VCALENDAR

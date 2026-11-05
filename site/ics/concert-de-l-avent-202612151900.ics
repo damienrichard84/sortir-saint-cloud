@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:concert-de-l-avent-202612151900@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261215T180000Z
+DTEND:20261215T200000Z
+SUMMARY:Concert de l’Avent
+LOCATION:École allemande internationale de Paris\, 12\, rue Lelégard\, 
+ 92210 Saint-Cloud
+DESCRIPTION:Par l’école de musique franco-allemande.\nTarif : Tarif no
+ n précisé
+END:VEVENT
+END:VCALENDAR

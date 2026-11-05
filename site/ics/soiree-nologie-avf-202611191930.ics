@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:soiree-nologie-avf-202611191930@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261119T183000Z
+DTEND:20261119T213000Z
+SUMMARY:Soirée œnologie AVF
+LOCATION:Salle de la Porte jaune\, 92210 Saint-Cloud
+DESCRIPTION:Atelier-dégustation.\nAdhésion AVF obligatoire. Renseigneme
+ nts au 01 47 71 53 68.\nTarif : 19 €
+END:VEVENT
+END:VCALENDAR

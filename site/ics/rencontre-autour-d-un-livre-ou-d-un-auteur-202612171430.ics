@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:rencontre-autour-d-un-livre-ou-d-un-auteur-202612171430@sortir-saint-
+ cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261217T133000Z
+DTEND:20261217T153000Z
+SUMMARY:Rencontre autour d’un livre ou d’un auteur
+LOCATION:Accueil AVF\, hôtel de ville\, 13\, place Charles-de-Gaulle\, 9
+ 2210 Saint-Cloud
+DESCRIPTION:Association AVF Saint-Cloud.\nAdhésion AVF obligatoire. Rens
+ eignements au 01 47 71 53 68.\nTarif : Gratuit
+END:VEVENT
+END:VCALENDAR

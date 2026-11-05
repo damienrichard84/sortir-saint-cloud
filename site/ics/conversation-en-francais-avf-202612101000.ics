@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:conversation-en-francais-avf-202612101000@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261210T090000Z
+DTEND:20261210T110000Z
+SUMMARY:Conversation en français AVF
+LOCATION:Accueil AVF\, hôtel de ville\, 13\, place Charles-de-Gaulle\, 9
+ 2210 Saint-Cloud
+DESCRIPTION:Chaque jeudi.\nAdhésion AVF obligatoire. Renseignements au 0
+ 1 47 71 53 68.\nTarif : 15 € l’année
+END:VEVENT
+END:VCALENDAR

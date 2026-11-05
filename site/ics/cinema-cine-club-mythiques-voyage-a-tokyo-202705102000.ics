@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-cine-club-mythiques-voyage-a-tokyo-202705102000@sortir-saint-c
+ loud
+DTSTAMP:20261104T150000Z
+DTSTART:20270510T180000Z
+DTEND:20270510T201600Z
+SUMMARY:Cinéma : Ciné-club Mythiques : Voyage à Tokyo
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:De Yasujirô Ozu\, 2 h 16. Débat animé par Jean-Charles Fit
+ oussi.\n8 € (moins de 15 ans : 5 €). Tarif cinéma à la séance.\nT
+ arif : 8 €
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:atelier-4-mains-2-6-ans-202704241030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270424T083000Z
+DTEND:20270424T100000Z
+SUMMARY:Atelier 4 mains 2-6 ans
+LOCATION:Le Carré\, 3 bis\, rue d’Orléans\, 92210 Saint-Cloud
+DESCRIPTION:Avec Lilyana. 2-3 ans de 9 h 30 à 10 h 30\, 4-6 ans de 10 h 
+ 30 à 12 h.\nTarif et inscription auprès de l’ECLA\, au 01 46 02 34 1
+ 2.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

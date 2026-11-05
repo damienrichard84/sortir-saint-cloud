@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:marche-de-noel-des-rendez-vous-de-saint-cloud-202612061000@sortir-sai
+ nt-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261206T090000Z
+DTEND:20261206T170000Z
+SUMMARY:Marché de Noël des Rendez-vous de Saint-Cloud
+LOCATION:Salles des Avelines\, 60\, rue Gounod\, 92210 Saint-Cloud
+DESCRIPTION:Pour préparer les cadeaux et les tables de fête.\nRenseigne
+ ments au 07 81 61 18 70.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

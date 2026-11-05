@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:l-enclos-prix-du-theatre-13-202705042030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270504T183000Z
+DTEND:20270504T195000Z
+SUMMARY:L’Enclos – Prix du Théâtre 13
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Grégoire\, dépendant aux drogues dures\, entre centre de d
+ ésintoxication et maison familiale. 1 h 20\, à partir de 14 ans. Salle
+  Lino Ventura.\nCatégorie D.\nTarif : De 10 à 19 €\nhttps://www.3pie
+ rrots.fr/spectacles/lenclos-prix-du-theatre-13
+URL:https://www.3pierrots.fr/spectacles/lenclos-prix-du-theatre-13
+END:VEVENT
+END:VCALENDAR

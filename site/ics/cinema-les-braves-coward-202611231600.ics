@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-les-braves-coward-202611231600@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261123T150000Z
+DTEND:20261123T170700Z
+SUMMARY:Cinéma : Les Braves (Coward)
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:De Lukas Dhont\, 2 h 07. Un jeune soldat sur le front de la P
+ remière Guerre mondiale.\n8 €. Moins de 15 ans : 5 €. Séances du d
+ imanche matin et du lundi après-midi : 5 €. Réservation sur cinema3p
+ ierrots.fr.\nTarif : 8 €
+END:VEVENT
+END:VCALENDAR

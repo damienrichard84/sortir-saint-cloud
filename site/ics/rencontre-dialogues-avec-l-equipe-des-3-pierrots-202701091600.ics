@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:rencontre-dialogues-avec-l-equipe-des-3-pierrots-202701091600@sortir-
+ saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270109T150000Z
+DTEND:20270109T170000Z
+SUMMARY:Rencontre Dialogues ! avec l’équipe des 3 Pierrots
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Échange sur la programmation artistique : partagez vos idée
+ s et vos envies.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

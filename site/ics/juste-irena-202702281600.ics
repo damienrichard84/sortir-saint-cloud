@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:juste-irena-202702281600@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270228T150000Z
+DTEND:20270228T162000Z
+SUMMARY:Juste Irena
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Irena Sendler raconte ses actes héroïques de la Seconde Gue
+ rre mondiale. 1 h 20\, à partir de 10 ans. Salle Lino Ventura.\nCatégo
+ rie D.\nTarif : De 10 à 19 €\nhttps://www.3pierrots.fr/spectacles/jus
+ te-irena
+URL:https://www.3pierrots.fr/spectacles/juste-irena
+END:VEVENT
+END:VCALENDAR

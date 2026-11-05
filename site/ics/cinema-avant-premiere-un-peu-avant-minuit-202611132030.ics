@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-avant-premiere-un-peu-avant-minuit-202611132030@sortir-saint-c
+ loud
+DTSTAMP:20261104T150000Z
+DTSTART:20261113T193000Z
+DTEND:20261113T212000Z
+SUMMARY:Cinéma : Avant-première : Un peu avant minuit
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:De et en présence de Nicolas Pariser\, 1 h 50. Léo\, 49 ans
+ \, apprend la mort de son père biologique.\n8 € (moins de 15 ans : 5 
+ €). Tarif cinéma à la séance.\nTarif : 8 €
+END:VEVENT
+END:VCALENDAR

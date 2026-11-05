@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:modele-vivant-202611301400@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261130T130000Z
+DTEND:20261130T153000Z
+SUMMARY:Modèle vivant
+LOCATION:Le Carré\, 3 bis\, rue d’Orléans\, 92210 Saint-Cloud
+DESCRIPTION:Dates de 2027 à venir.\nTarif et inscription auprès de l’
+ ECLA\, au 01 46 02 34 12.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

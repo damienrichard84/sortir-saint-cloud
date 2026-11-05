@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:en-attendant-bojangles-202704272030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270427T183000Z
+DTEND:20270427T195000Z
+SUMMARY:En attendant Bojangles
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Une mère fantasque entraîne sa famille dans une fête perma
+ nente. 1 h 20. Salle Lino Ventura.\nCatégorie B.\nTarif : De 13 à 30 
+ €\nhttps://www.3pierrots.fr/spectacles/en-attendant-bojangles
+URL:https://www.3pierrots.fr/spectacles/en-attendant-bojangles
+END:VEVENT
+END:VCALENDAR

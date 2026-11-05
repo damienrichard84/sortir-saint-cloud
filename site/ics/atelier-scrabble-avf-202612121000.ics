@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:atelier-scrabble-avf-202612121000@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261212T090000Z
+DTEND:20261212T110000Z
+SUMMARY:Atelier Scrabble AVF
+LOCATION:Accueil AVF\, hôtel de ville\, 13\, place Charles-de-Gaulle\, 9
+ 2210 Saint-Cloud
+DESCRIPTION:Mardi après-midi et samedi matin. Inscription souhaitée.\nA
+ dhésion AVF obligatoire. Renseignements au 01 47 71 53 68.\nTarif : Gra
+ tuit
+END:VEVENT
+END:VCALENDAR

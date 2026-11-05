@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-il-faut-bruler-maman-202611221615@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261122T151500Z
+DTEND:20261122T163600Z
+SUMMARY:Cinéma : Il faut brûler maman
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:D’Albert Dupontel\, 1 h 21. Une famille de croque-morts se 
+ retrouve pour les funérailles de la mère.\n8 €. Moins de 15 ans : 5 
+ €. Séances du dimanche matin et du lundi après-midi : 5 €. Réserv
+ ation sur cinema3pierrots.fr.\nTarif : 8 €
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-cine-club-mythiques-huit-et-demi-202704192000@sortir-saint-clo
+ ud
+DTSTAMP:20261104T150000Z
+DTSTART:20270419T180000Z
+DTEND:20270419T201800Z
+SUMMARY:Cinéma : Ciné-club Mythiques : Huit et demi
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:De Federico Fellini\, 2 h 18\, 1963. Débat animé par René 
+ Marx.\n8 € (moins de 15 ans : 5 €). Tarif cinéma à la séance.\nTa
+ rif : 8 €
+END:VEVENT
+END:VCALENDAR

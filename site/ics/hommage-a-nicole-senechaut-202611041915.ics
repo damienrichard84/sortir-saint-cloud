@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:hommage-a-nicole-senechaut-202611041915@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261104T181500Z
+DTEND:20261104T201500Z
+SUMMARY:Hommage à Nicole Sénéchaut
+LOCATION:Le Carré\, 3 bis\, rue d’Orléans\, 92210 Saint-Cloud
+DESCRIPTION:Soirée de l’association GERMA : extraits de son enseigneme
+ nt et de ses prestations dansées\, puis musiciens et danseurs de niveau
+  international sur scène.\nRenseignements : associationgerma@yahoo.fr.\
+ nTarif : Participation libre\nhttps://www.saintcloud.fr/agenda/hommage-n
+ icole-senechaut-0
+URL:https://www.saintcloud.fr/agenda/hommage-nicole-senechaut-0
+END:VEVENT
+END:VCALENDAR

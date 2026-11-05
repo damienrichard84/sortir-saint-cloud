@@ -1,0 +1,10 @@
+const {chromium}=require('playwright');
+const svg=(pad,round)=>{const u=(100-2*pad)/100,off=pad;const x=v=>off+v*u;let dots='';const cols=[26,42,58,74],rows=[56,70,84];
+for(const[r,y]of rows.entries())for(const[c,xx]of cols.entries()){const hot=r===1&&c===2;dots+=`<rect x="${x(xx-5)}" y="${x(y-5)}" width="${10*u}" height="${10*u}" rx="${2.2*u}" fill="${hot?'#e8a13a':'#c3d3ea'}"/>`}
+return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="${round}" fill="#1d4fa8"/><rect x="${x(12)}" y="${x(18)}" width="${76*u}" height="${72*u}" rx="${7*u}" fill="#fff"/><path d="M${x(12)} ${x(25)}a${7*u} ${7*u} 0 0 1 ${7*u} -${7*u}h${62*u}a${7*u} ${7*u} 0 0 1 ${7*u} ${7*u}v${18*u}h-${76*u}z" fill="#173a7e"/><rect x="${x(28)}" y="${x(10)}" width="${8*u}" height="${17*u}" rx="${4*u}" fill="#fff"/><rect x="${x(64)}" y="${x(10)}" width="${8*u}" height="${17*u}" rx="${4*u}" fill="#fff"/>${dots}</svg>`};
+(async()=>{const b=await chromium.launch();
+const out=[['icon-32',32,0,18],['icon-192',192,0,22],['icon-512',512,0,22],['maskable-512',512,14,0],['apple-touch-icon',180,6,0]];
+for(const[n,s,p,r]of out){const pg=await b.newPage({viewport:{width:s,height:s}});await pg.setContent(`<!doctype html><style>html,body{margin:0;background:transparent}svg{display:block;width:${s}px;height:${s}px}</style>${svg(p,r)}`);await pg.screenshot({path:`site/icons/${n}.png`,omitBackground:n.startsWith('icon')});await pg.close()}
+const pg=await b.newPage({viewport:{width:640,height:220}});await pg.goto('about:blank');
+const fs=require('fs');const im=n=>'data:image/png;base64,'+fs.readFileSync(`site/icons/${n}.png`).toString('base64');
+await pg.setContent(`<body style="background:#888;margin:10px;display:flex;gap:10px;align-items:center"><img src="${im('icon-192')}"><img src="${im('maskable-512')}" width=192 style="border-radius:50%"><img src="${im('icon-32')}"></body>`);await pg.waitForTimeout(100);await pg.screenshot({path:'/tmp/sortir-icones.png'});await b.close()})()

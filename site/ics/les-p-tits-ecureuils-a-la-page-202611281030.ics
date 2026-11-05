@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:les-p-tits-ecureuils-a-la-page-202611281030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261128T093000Z
+DTEND:20261128T103000Z
+SUMMARY:Les p’tits écureuils à la page
+LOCATION:Médiathèque\, Espace jeunesse\, 60\, rue Gounod\, 92210 Saint-
+ Cloud
+DESCRIPTION:Club lecture pour les 8-10 ans : romans\, BD\, mangas et docu
+ mentaires.\nTarif : Entrée libre dans la limite des places disponibles
+END:VEVENT
+END:VCALENDAR

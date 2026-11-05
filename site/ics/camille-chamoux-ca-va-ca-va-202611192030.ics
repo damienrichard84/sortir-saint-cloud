@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:camille-chamoux-ca-va-ca-va-202611192030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261119T193000Z
+DTEND:20261119T205500Z
+SUMMARY:Camille Chamoux – Ça va ça va
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Humour. Salle Lino Ventura\, 1 h 25. Un spectacle sur la frag
+ ilité et les complexités du quotidien\, avec une bonne dose d’autod
+ érision.\nRéservation sur billetterie-3pierrots.mapado.com.\nTarif : 4
+ 5 €\nhttps://www.3pierrots.fr/spectacles/camille-chamoux-ca-va-ca-va
+URL:https://www.3pierrots.fr/spectacles/camille-chamoux-ca-va-ca-va
+END:VEVENT
+END:VCALENDAR

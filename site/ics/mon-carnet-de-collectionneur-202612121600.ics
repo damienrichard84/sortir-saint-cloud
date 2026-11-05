@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:mon-carnet-de-collectionneur-202612121600@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261212T150000Z
+DTEND:20261212T163000Z
+SUMMARY:Mon carnet de collectionneur
+LOCATION:Musée des Avelines\, 60\, rue Gounod\, 92210 Saint-Cloud
+DESCRIPTION:Atelier 8-12 ans : façonne ton carnet et inscris ta collecti
+ on à la plume et à l’encre de Chine.\nRéservation au 01 46 02 67 18
+ .\nTarif : 5\,50 €
+END:VEVENT
+END:VCALENDAR

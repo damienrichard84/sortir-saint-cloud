@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:noyer-le-poisson-202701271600@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270127T150000Z
+DTEND:20270127T160000Z
+SUMMARY:Noyer le poisson
+LOCATION:Musée des Avelines\, 60\, rue Gounod\, 92210 Saint-Cloud
+DESCRIPTION:Atelier 5-7 ans : recrée en papier le double d’objets qui 
+ ont perdu leurs couleurs.\nRéservation au 01 46 02 67 18.\nTarif : 4\,5
+ 0 €
+END:VEVENT
+END:VCALENDAR

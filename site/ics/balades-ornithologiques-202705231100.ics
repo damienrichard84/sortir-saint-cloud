@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:balades-ornithologiques-202705231100@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270523T090000Z
+DTEND:20270523T101500Z
+SUMMARY:Balades ornithologiques
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Dès 8 ans\, 1 h 15\, autour de Vivantes !.\nRéservé aux sp
+ ectateurs ayant un billet pour le spectacle associé. Renseignements sur
+  3pierrots.fr.\nTarif : 5 €
+END:VEVENT
+END:VCALENDAR

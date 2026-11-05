@@ -1,0 +1,5 @@
+Sortir à Saint-Cloud : application web installable
+
+Mise en ligne simple : déposez ce dossier sur https://app.netlify.com/drop
+Autre hébergement : copiez tout le dossier sur un site en HTTPS.
+L'installation sur téléphone exige une adresse en HTTPS.

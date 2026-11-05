@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:club-lecture-adulte-202611181100@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261118T100000Z
+DTEND:20261118T110000Z
+SUMMARY:Club lecture adulte
+LOCATION:Médiathèque\, 60\, rue Gounod\, 92210 Saint-Cloud
+DESCRIPTION:Les coups de cœur des bibliothécaires\, en livres et en fil
+ ms.\nSur inscription au 01 46 02 50 08.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

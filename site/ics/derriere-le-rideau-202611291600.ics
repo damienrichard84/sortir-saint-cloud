@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:derriere-le-rideau-202611291600@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261129T150000Z
+DTEND:20261129T160000Z
+SUMMARY:Derrière le rideau
+LOCATION:Musée des Avelines\, 60\, rue Gounod\, 92210 Saint-Cloud
+DESCRIPTION:Parcours musical dans les salles d’exposition\, par la clas
+ se d’Isabelle Philippe et de Lionel Muzin du conservatoire.\nRéservat
+ ion au 01 46 02 67 18.\nTarif : Gratuit
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:contes-et-histoires-au-domaine-20261219@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20270104
+SUMMARY:Contes et histoires au Domaine
+LOCATION:Domaine national de Saint-Cloud\, 1\, avenue de la Grille-d’Ho
+ nneur
+DESCRIPTION:Hommage à Madame d’Aulnoy\, grande voix du conte de fées.
+  À partir de 5 ans. Gratuit pour les moins de 26 ans.\nInscription obli
+ gatoire à partir du 1er décembre sur domaine-saint-cloud.fr.\nTarif : 
+ De 7\,50 à 9 €
+END:VEVENT
+END:VCALENDAR

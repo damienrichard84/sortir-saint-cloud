@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:collecte-des-banques-alimentaires-202611060930@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261106T083000Z
+DTEND:20261106T173000Z
+SUMMARY:Collecte des banques alimentaires
+LOCATION:Monoprix et Intermarché\, 5\, avenue du Maréchal-Foch et 54\, 
+ rue du Dix-Huit-Juin 1940\, 92210 Saint-Cloud
+DESCRIPTION:Avec le Rotary Club\, vendredi et samedi de 9 h 30 à 12 h 30
+  et de 14 h 30 à 18 h 30\, dimanche de 9 h 30 à 12 h 30. Le club cherc
+ he des bénévoles.\nRenseignements sur rotarysaintcloud.fr.\nTarif : Gr
+ atuit (dons alimentaires)\nhttps://www.saintcloud.fr/agenda/collectes-de
+ s-banques-alimentaires-du-rotary-club-de-saint-cloud
+URL:https://www.saintcloud.fr/agenda/collectes-des-banques-alimentaires-d
+ u-rotary-club-de-saint-cloud
+END:VEVENT
+END:VCALENDAR

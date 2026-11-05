@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ateliers-libres-arts-plastiques-et-fil-en-aiguil-202611261330@sortir-
+ saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261126T123000Z
+DTEND:20261126T153000Z
+SUMMARY:Ateliers libres : arts plastiques et fil en aiguille
+LOCATION:Espace d’animation des Coteaux\, Place Santos-Dumont\, 92210 S
+ aint-Cloud
+DESCRIPTION:Espace d’animation des Coteaux.\nRéservé aux adhérents (
+ 60 ans et plus). Renseignements au 01 46 89 64 86.\nTarif : Tarif non pr
+ écisé
+END:VEVENT
+END:VCALENDAR

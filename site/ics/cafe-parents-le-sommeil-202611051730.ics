@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cafe-parents-le-sommeil-202611051730@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261105T163000Z
+DTEND:20261105T180000Z
+SUMMARY:Café parents : le sommeil
+LOCATION:Boîte aux trésors\, 18\, rue des Écoles\, 92210 Saint-Cloud
+DESCRIPTION:Difficultés d’endormissement\, réveils nocturnes et terre
+ urs nocturnes.\nInscription souhaitée : petite-enfance@saintcloud.fr.\n
+ Tarif : Gratuit\nhttps://www.saintcloud.fr/agenda/cafe-parents
+URL:https://www.saintcloud.fr/agenda/cafe-parents
+END:VEVENT
+END:VCALENDAR

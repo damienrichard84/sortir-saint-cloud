@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-the-cine-202702221430@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270222T133000Z
+DTEND:20270222T153000Z
+SUMMARY:Cinéma : Thé-Ciné
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Avec l’Espace d’animation des Coteaux : film récent sous
+ -titré en français\, suivi d’un moment convivial. Séance ouverte à
+  tous. Le 16 novembre : Les Misérables.\nTarif cinéma du lundi après-
+ midi.\nTarif : 5 €
+END:VEVENT
+END:VCALENDAR

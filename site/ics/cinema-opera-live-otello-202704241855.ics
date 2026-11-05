@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-opera-live-otello-202704241855@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270424T165500Z
+DTEND:20270424T185500Z
+SUMMARY:Cinéma : Opéra Live : Otello
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:De Verdi\, en italien sous-titré\, un entracte. Retransmissi
+ on du Metropolitan Opera.\nPlein tarif 30 €\, tarif réduit 20 €. R
+ éservation sur cinema3pierrots.fr.\nTarif : 20 ou 30 €
+END:VEVENT
+END:VCALENDAR

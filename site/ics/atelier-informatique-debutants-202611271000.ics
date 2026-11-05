@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:atelier-informatique-debutants-202611271000@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261127T090000Z
+DTEND:20261127T110000Z
+SUMMARY:Atelier informatique débutants
+LOCATION:Espace d’animation des Coteaux\, Place Santos-Dumont\, 92210 S
+ aint-Cloud
+DESCRIPTION:Pour débutants et semi-débutants\, sur inscription.\nRéser
+ vé aux adhérents (60 ans et plus). Renseignements au 01 46 89 64 86.\n
+ Tarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

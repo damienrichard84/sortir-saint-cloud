@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-l-affaire-marie-claire-202611271800@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261127T170000Z
+DTEND:20261127T184200Z
+SUMMARY:Cinéma : L’Affaire Marie-Claire
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:De Lauriane Escaffre et Yvo Muller\, 1 h 42. Novembre 1972\, 
+ le procès de Bobigny.\n8 €. Moins de 15 ans : 5 €. Séances du dima
+ nche matin et du lundi après-midi : 5 €. Réservation sur cinema3pier
+ rots.fr.\nTarif : 8 €
+END:VEVENT
+END:VCALENDAR

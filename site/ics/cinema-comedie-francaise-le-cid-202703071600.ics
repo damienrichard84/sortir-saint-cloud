@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-comedie-francaise-le-cid-202703071600@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270307T150000Z
+DTEND:20270307T170000Z
+SUMMARY:Cinéma : Comédie-Française : Le Cid
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:De Corneille\, retransmis en différé.\nPlein tarif 22 €\,
+  tarif réduit 12 €. Réservation sur cinema3pierrots.fr.\nTarif : 12 
+ ou 22 €
+END:VEVENT
+END:VCALENDAR

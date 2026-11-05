@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-cine-relax-20270321@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270322
+SUMMARY:Cinéma : Ciné Relax
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Séance inclusive\, accessible aux personnes en situation de 
+ handicap\, en version sous-titrée\, suivie d’un goûter. Le 8 novembr
+ e : Le Corset\, film d’animation de Louis Clichy. Films et horaires de
+ s séances suivantes à venir.\nRéservation sur cinema3pierrots.fr. Ren
+ seignements : saintcloud@cinerelax.org.\nTarif : 4 €
+END:VEVENT
+END:VCALENDAR

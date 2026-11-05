@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cross-du-figaro-20261129@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Cross du Figaro
+LOCATION:Domaine national de Saint-Cloud\, 1\, avenue de la Grille-d’Ho
+ nneur
+DESCRIPTION:Événement inaugural du Téléthon. Vendredi en nocturne : 5
+  et 10 km. Dimanche : 5\, 10 et 20 km.\nTarifs et inscription sur crossd
+ ufigaro.com.\nTarif : Inscription payante
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-mon-petit-cine-les-nouvelles-aventures-de-202706091500@sortir-
+ saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270609T130000Z
+DTEND:20270609T134500Z
+SUMMARY:Cinéma : Mon Petit Ciné : Les nouvelles aventures de Rita et Ma
+ chin
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Dès 3 ans\, 45 min. Séance suivie d’un atelier créatif.\
+ nMoins de 15 ans : 5 €. Atelier sur inscription : c.mihura@saintcloud.
+ fr.\nTarif : 8 €
+END:VEVENT
+END:VCALENDAR

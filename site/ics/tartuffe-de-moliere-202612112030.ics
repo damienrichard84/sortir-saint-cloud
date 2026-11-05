@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:tartuffe-de-moliere-202612112030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261211T193000Z
+DTEND:20261211T213000Z
+SUMMARY:Tartuffe de Molière
+LOCATION:Le Carré\, 3 bis\, rue d’Orléans\, 92210 Saint-Cloud
+DESCRIPTION:Mise en scène par la troupe des Baladins\, dans le cadre de 
+ L’Œuvre d’Orient\, pour une collecte de fonds.\nTarif : Tarif non p
+ récisé
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:l-avare-202701142030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270114T193000Z
+DTEND:20270114T220000Z
+SUMMARY:L’Avare
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Molière en mise en scène contemporaine : la troupe joue ave
+ c les objets apportés par le public. 2 h 30. Salle Lino Ventura.\nCaté
+ gorie A.\nTarif : De 18 à 37 €\nhttps://www.3pierrots.fr/spectacles/l
+ avare
+URL:https://www.3pierrots.fr/spectacles/lavare
+END:VEVENT
+END:VCALENDAR

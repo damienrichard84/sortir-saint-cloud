@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:animations-de-decembre-avec-l-ecla-20261230@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART;VALUE=DATE:20261230
+DTEND;VALUE=DATE:20261231
+SUMMARY:Animations de décembre avec l’ECLA
+LOCATION:Le Carré\, 3 bis\, rue d’Orléans\, 92210 Saint-Cloud
+DESCRIPTION:Chaque mercredi de décembre\, pour petits et grands.\nRensei
+ gnements sur ecla.net.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

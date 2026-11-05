@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:stage-d-hiver-jeux-d-opposition-et-capoeira-20270218@sortir-saint-clo
+ ud
+DTSTAMP:20261104T150000Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270219
+SUMMARY:Stage d’hiver : jeux d’opposition et capoeira
+LOCATION:Gymnase Saint-Exupéry\, 92210 Saint-Cloud
+DESCRIPTION:École des Sports\, 6-12 ans. 24 places. Sortie Gopark.\nHors
+  Saint-Cloud : 332 €. Inscription en ligne sur l’Espace Famille. Ren
+ seignements au 01 47 71 54 33. Inscription à partir du 4 janvier à 10 
+ h.\nTarif : De 63 à 208 €
+END:VEVENT
+END:VCALENDAR

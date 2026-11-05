@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:distribution-de-composteurs-202611181400@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261118T130000Z
+DTEND:20261118T150000Z
+SUMMARY:Distribution de composteurs
+LOCATION:Service Voirie\, 18\, rue de Garches\, 92210 Saint-Cloud
+DESCRIPTION:Composteurs et lombricomposteurs.\nRenseignements au 01 47 71
+  54 26.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

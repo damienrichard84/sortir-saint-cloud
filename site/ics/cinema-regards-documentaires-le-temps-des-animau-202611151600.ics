@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cinema-regards-documentaires-le-temps-des-animau-202611151600@sortir-
+ saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261115T150000Z
+DTEND:20261115T162400Z
+SUMMARY:Cinéma : Regards documentaires : Le Temps des animaux
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:De Vincent Chabloz\, 1 h 24\, en VO\, dès 8 ans. La vallée 
+ de Derborence\, dans les Alpes. Séance suivie d’une rencontre.\n8 €
+  (moins de 15 ans : 5 €). Tarif cinéma à la séance.\nTarif : 8 €\
+ nhttps://www.3pierrots.fr/spectacles/le-temps-des-animaux
+URL:https://www.3pierrots.fr/spectacles/le-temps-des-animaux
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dictee-avf-202611161430@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20261116T133000Z
+DTEND:20261116T153000Z
+SUMMARY:Dictée AVF
+LOCATION:Salle de la Porte jaune\, 92210 Saint-Cloud
+DESCRIPTION:Association AVF Saint-Cloud.\nAdhésion AVF obligatoire. Rens
+ eignements au 01 47 71 53 68.\nTarif : Tarif non précisé
+END:VEVENT
+END:VCALENDAR

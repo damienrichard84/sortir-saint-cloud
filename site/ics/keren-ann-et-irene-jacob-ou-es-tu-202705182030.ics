@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sortir a Saint-Cloud//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:keren-ann-et-irene-jacob-ou-es-tu-202705182030@sortir-saint-cloud
+DTSTAMP:20261104T150000Z
+DTSTART:20270518T183000Z
+DTEND:20270518T193500Z
+SUMMARY:Keren Ann et Irène Jacob – Où es-tu ?
+LOCATION:Les 3 Pierrots\, 6\, rue du Mont-Valérien\, 92210 Saint-Cloud
+DESCRIPTION:Une création musicale et poétique. 1 h 05.\nCatégorie B. C
+ arte Passion de 10 à 23 €.\nTarif : De 13 à 30 €
+END:VEVENT
+END:VCALENDAR
